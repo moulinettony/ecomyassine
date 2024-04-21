@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'animate.css';
+@font-face {
+  font-family: __Pixelify_Sans_088d02;
+  src: url(https://www.ecomvestors.com//_next/static/media/48fe7c8da6129df0.woff2) format('woff2');
+}
+/* Write custom base/ component/ utility styles with `@layer` directive */
+
+#myRange {
+  -webkit-appearance: none;
+  appearance: none; 
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+#myRange::-webkit-slider-runnable-track {
+  height: 15px;
+  background: #ccc;
+  border-radius: 16px;
+}
+
+#myRange::-moz-range-track {
+  height: 15px;
+  background: #ccc;
+  border-radius: 16px;
+}
+
+#myRange::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none; 
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #3b82f6;
+  box-shadow: -407px 0 0 400px #3b82f6;
+}
+
+@layer base {
+
+  [type="text"],
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    @apply border-gray-300 focus:border-blue-500 focus:ring-blue-500 rounded-lg shadow-sm;
+  }
+
+  [type="checkbox"],
+  [type="radio"] {
+    @apply border-gray-300 focus:ring-blue-500 h-5 text-blue-600 w-5;
+  }
+
+  [type="checkbox"] {
+    @apply rounded;
+  }
+
+  [type="radio"] {
+    @apply rounded-full;
+  }
+
+}
+
+@layer components {
+
+  .prose :where(code):not(:where([class~="not-prose"] *)) {
+    @apply bg-gray-200 dark:bg-gray-800 dark:text-white font-normal px-1 py-0.5 rounded-md text-sm;
+  }
+
+  .prose :where(code):not(:where([class~="not-prose"] *))::before {
+    content: '';
+  }
+
+  .prose :where(code):not(:where([class~="not-prose"] *))::after {
+    content: '';
+  }
+
+}
+.bg-gray-950\/50 {
+  background-color: rgba(3, 7, 18, .5);
+}
+.__className_088d02 {
+  font-family: __Pixelify_Sans_088d02;
+  font-style: normal;
+}
+.bg-gray-950 {
+  --tw-bg-opacity: 1;
+  background-color: #030712;
+}
+.border-gray-950{
+  border: 2px solid #030712;
+}
+.nextButton {
+  /* Your initial styles for the button */
+  opacity: 1;
+  transition: opacity 1s; /* Define the transition property with the desired duration */
+}
+
+.showNextButton {
+  opacity: 1;
+  transition: opacity 1s;
+}
+@media screen and (min-width: 1025px){
+  .bgwhite{
+    background: rgba(254, 254, 254, 0.56);
+  }
+  .bg-blue-500{
+    background-color: #608FF5;
+  }
+}
+@media screen and (max-width: 1024px){
+  .backnext{
+    background: #d6e4fe
+  }
+}
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+th,td{
+  border: 1px solid black;
+}
+th{
+  background-color: #608FF5;
+  color: white;
+}
+td{
+  background: rgba(254, 254, 254, 0.56);
+}
