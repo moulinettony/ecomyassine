@@ -4,7 +4,6 @@ import Typography from "@mui/material/Typography";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
-import "react-image-lightbox/style.css";
 import Particles from "./particles";
 import dynamic from "next/dynamic";
 
@@ -516,7 +515,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mt-10 flex w-full flex-col items-center justify-between md:mt-20">
+     {/*  
+     <section className="mt-10 flex w-full flex-col items-center justify-between md:mt-20">
         <div className="z-0 flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate">
             <div className="container relative mx-auto my-10 w-full max-w-7xl rounded-3xl px-4 sm:px-6 md:px-8">
@@ -615,6 +615,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      */}
       <section className="w-full py-24 sm:py-32">
         <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-2">
           <div className="max-w-2xl">
