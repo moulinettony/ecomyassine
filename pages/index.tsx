@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import Particles from "./particles";
 import dynamic from "next/dynamic";
-
+ 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const [videoIndex, setVideoIndex] = useState(0);
