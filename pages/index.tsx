@@ -45,7 +45,7 @@ export default function Home() {
       <Particles
         className="absolute inset-0 z-[-1] animate-fade-in"
         quantity={100}
-      />
+      /> 
       <section className="flex w-full flex-col items-center justify-between">
         <div className="relative z-0 flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate">
