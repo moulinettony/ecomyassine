@@ -8,8 +8,6 @@ import Particles from "./particles";
 import dynamic from "next/dynamic";
  
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [videoIndex, setVideoIndex] = useState(0);
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
   const [selectedOption, setSelectedOption] = useState<string>("option1");
@@ -25,11 +23,6 @@ export default function Home() {
   const handleOptionChange3 = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedOption3(event.target.value);
   };
-
-  const ReactPlayer = dynamic(
-    () => import('react-player'),
-    { ssr: false}
-  )
   
   const toggleAccordion = () => {
     setIsAccordionOpen(!isAccordionOpen);
@@ -39,22 +32,6 @@ export default function Home() {
     (panel: string) => (event: React.ChangeEvent<{}>, isExpanded: boolean) => {
       setExpanded(isExpanded ? panel : null);
     };
-
-  const videos = [
-    "videos/video-1.mp4",
-    "videos/video-2.mp4",
-    "videos/video-3.mp4",
-    "videos/video-1.mp4",
-    "videos/video-2.mp4",
-    "videos/video-3.mp4",
-    "videos/video-1.mp4",
-    "videos/video-2.mp4",
-  ];
-
-  const openLightbox = (index: any) => {
-    setVideoIndex(index);
-    setIsOpen(true);
-  };
 
   return (
     <div className="overflow-hidden">
