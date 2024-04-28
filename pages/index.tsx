@@ -43,7 +43,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Particles
-        className="absolute inset-0 z-[-1] animate-fade-in"
+        className="absolute inset-0 z-[10] animate-fade-in"
         quantity={100}
       /> 
       <section className="flex w-full flex-col items-center justify-between">
