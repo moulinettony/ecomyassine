@@ -47,7 +47,7 @@ export default function Home() {
         quantity={100}
       /> 
       <section className="flex w-full flex-col items-center justify-between">
-        <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
+        <div className="relative flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate">
             <div className="container relative mx-auto my-4 w-full max-w-7xl rounded-3xl px-4 pt-16 sm:my-10 sm:px-6 sm:pt-24 md:px-8 lg:pt-28">
               <div className="mb-8 flex justify-center">
@@ -204,7 +204,7 @@ export default function Home() {
         </div>
       </section>
       <section className="mt-10 flex w-full flex-col items-center justify-between md:mt-20">
-        <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
+        <div className="relative flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate">
             <div className="container relative mx-auto mt-10 w-full max-w-7xl rounded-3xl px-4 sm:mb-10 sm:px-6 md:px-8">
               <div className="mb-8 flex justify-center">
@@ -378,7 +378,7 @@ export default function Home() {
         </div>
       </section>
       <section className="mt-5 flex w-full flex-col items-center justify-between md:mt-20">
-        <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
+        <div className="relative flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate">
             <div className="container relative mx-auto my-4 w-full max-w-7xl rounded-3xl px-4 sm:my-10 sm:px-6 md:px-8">
               <div className="mb-8 flex justify-center">
@@ -494,7 +494,7 @@ export default function Home() {
       </section>
      {/*  
      <section className="mt-10 flex w-full flex-col items-center justify-between md:mt-20">
-        <div className="z-[5] flex h-auto w-full flex-col items-center justify-center">
+        <div className="flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate">
             <div className="container relative mx-auto my-10 w-full max-w-7xl rounded-3xl px-4 sm:px-6 md:px-8">
               <div className="mb-8 flex justify-center">
@@ -738,7 +738,7 @@ export default function Home() {
         </div>
       </section>
       <section className="mb-20 flex w-full flex-col items-center justify-between">
-        <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
+        <div className="relative flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate px-4 sm:px-8 lg:px-24">
             <div className="container relative mx-auto my-10 w-full max-w-7xl rounded-3xl border border-gray-800/50 bg-gray-950/50 px-4 py-4 backdrop-blur-lg sm:px-8 sm:py-8 md:px-16 lg:px-24 lg:py-28">
               <div className="mb-8 flex justify-center">
