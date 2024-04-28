@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
-import Particles from "./particles";
+import Particles from "./particles"; 
 import dynamic from "next/dynamic";
  
 export default function Home() {
