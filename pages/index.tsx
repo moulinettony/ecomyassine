@@ -43,7 +43,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Particles
-        className="absolute inset-0 z-[10] animate-fade-in"
+        className="absolute inset-0 z-[1] animate-fade-in"
         quantity={100}
       /> 
       <section className="flex w-full flex-col items-center justify-between">
@@ -638,7 +638,7 @@ export default function Home() {
               </AccordionDetails>
             </Accordion>
             <Accordion
-              className="border-b border-gray-800"
+              className="z-20 border-b border-gray-800"
               expanded={expanded === "panel2"}
               onChange={handleChange("panel2")}
             >
@@ -665,7 +665,7 @@ export default function Home() {
               </AccordionDetails>
             </Accordion>
             <Accordion
-              className="border-b border-gray-800"
+              className="z-20 border-b border-gray-800"
               expanded={expanded === "panel3"}
               onChange={handleChange("panel3")}
             >
@@ -688,7 +688,7 @@ export default function Home() {
               </AccordionDetails>
             </Accordion>
             <Accordion
-              className="border-b border-gray-800"
+              className="z-20 border-b border-gray-800"
               expanded={expanded === "panel4"}
               onChange={handleChange("panel4")}
             >
@@ -713,7 +713,7 @@ export default function Home() {
               </AccordionDetails>
             </Accordion>
             <Accordion
-              className="border-b border-gray-800"
+              className="z-20 border-b border-gray-800"
               expanded={expanded === "panel5"}
               onChange={handleChange("panel5")}
             >
@@ -759,7 +759,7 @@ export default function Home() {
                   LAUNCH YOUR DREAM
                 </div>
               </div>
-              <div className="text-center">
+              <div className="relative z-[20] text-center">
                 <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
                   E-commerce Mastery of the future. Available today.
                 </h2>
