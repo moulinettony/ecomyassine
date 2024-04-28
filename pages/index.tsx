@@ -78,13 +78,13 @@ export default function Home() {
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2">
                   <a
                     href="#"
-                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-500 bg-white font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-blue-50 hover:text-blue-600 active:bg-blue-100 h-11 px-8 rounded-full"
+                    className="z-20 inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-500 bg-white font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-blue-50 hover:text-blue-600 active:bg-blue-100 h-11 px-8 rounded-full"
                   >
                     Get a Place
                   </a>
                   <a
                     href="#"
-                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-600 bg-gray-950 font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-gray-900 hover:text-blue-600 active:bg-blue-950 active:text-blue-500 h-11 px-8 rounded-full"
+                    className="z-20 inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-600 bg-gray-950 font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-gray-900 hover:text-blue-600 active:bg-blue-950 active:text-blue-500 h-11 px-8 rounded-full"
                   >
                     Become a Partner
                   </a>
@@ -384,7 +384,7 @@ export default function Home() {
               <div className="mb-8 flex justify-center">
                 <a
                   href="#"
-                  className="flex size-auto items-center justify-start bg-none"
+                  className="z-20 flex size-auto items-center justify-start bg-none"
                 >
                   <img
                     className="size-16 rounded-xl shadow-2xl shadow-blue-500/10 backdrop-blur-md"
@@ -412,7 +412,7 @@ export default function Home() {
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2">
                   <a
                     href="#"
-                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-500 bg-white font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-blue-50 hover:text-blue-600 active:bg-blue-100 h-11 px-8 rounded-full"
+                    className="z-20 inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-500 bg-white font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-blue-50 hover:text-blue-600 active:bg-blue-100 h-11 px-8 rounded-full"
                   >
                     Let's Get Started
                   </a>
@@ -613,7 +613,7 @@ export default function Home() {
           </div>
           <div>
             <Accordion
-              className="border-b border-gray-800"
+              className="z-20 border-b border-gray-800"
               expanded={expanded === "panel1"}
               onChange={handleChange("panel1")}
             >
@@ -744,7 +744,7 @@ export default function Home() {
               <div className="mb-8 flex justify-center">
                 <a
                   href=""
-                  className="flex size-auto items-center justify-start bg-none"
+                  className="z-20 flex size-auto items-center justify-start bg-none"
                 >
                   <img
                     src="/images/logo-dark-3x.webp"
@@ -770,13 +770,13 @@ export default function Home() {
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2">
                   <a
                     href=""
-                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-500 bg-white font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-blue-50 hover:text-blue-600 active:bg-blue-100 h-11 px-8 rounded-full"
+                    className="z-20 inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-500 bg-white font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-blue-50 hover:text-blue-600 active:bg-blue-100 h-11 px-8 rounded-full"
                   >
                     Get a Place
                   </a>
                   <a
                     href=""
-                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-600 bg-gray-950 font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-gray-900 hover:text-blue-600 active:bg-blue-950 active:text-blue-500 h-11 px-8 rounded-full"
+                    className="z-20 inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-600 bg-gray-950 font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-gray-900 hover:text-blue-600 active:bg-blue-950 active:text-blue-500 h-11 px-8 rounded-full"
                   >
                     Become a Partner
                   </a>
@@ -1109,7 +1109,7 @@ export default function Home() {
         <div className="flex size-auto flex-1 flex-col items-center justify-start gap-10 md:flex-row">
           <a
             href=""
-            className="flex size-auto items-center justify-start bg-none"
+            className="z-20 flex size-auto items-center justify-start bg-none"
           >
             <img
               src="images/logo-dark-3x.webp"
