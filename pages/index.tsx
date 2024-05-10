@@ -6,7 +6,8 @@ import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import Particles from "./particles"; 
 import dynamic from "next/dynamic";
- 
+import { red } from "@mui/material/colors";
+import PricingTab, { PricingTable } from "@/components/pricing-table";
 export default function Home() {
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -53,7 +54,7 @@ export default function Home() {
               <div className="mb-8 flex justify-center">
                 <a href="flex size-auto items-center justify-start bg-none">
                   <img
-                    src="/images/logo-dark-3x.webp"
+                    src="/images/ECOMSIN.png"
                     width={250}
                     height={50}
                     alt=""
@@ -607,7 +608,7 @@ export default function Home() {
                 Answers.
               </h2>
               <p className="mt-6 text-base leading-8 text-gray-400">
-                FAQs for the EcomVestors Master Program.
+                FAQs for the EcomSin Master Program.
               </p>
             </div>
           </div>
@@ -624,7 +625,7 @@ export default function Home() {
                 }
               >
                 <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all hover:underline">
-                  What will I learn in the EcomVestors Master Program?
+                  What will I learn in the EcomSin Master Program?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -737,6 +738,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section>
+        <PricingTable/>
+      </section>
       <section className="mb-20 flex w-full flex-col items-center justify-between">
         <div className="relative flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate px-4 sm:px-8 lg:px-24">
@@ -747,7 +751,7 @@ export default function Home() {
                   className="z-20 flex size-auto items-center justify-start bg-none"
                 >
                   <img
-                    src="/images/logo-dark-3x.webp"
+                    src="/images/ECOMSIN.png"
                     width={250}
                     height={50}
                     alt=""
@@ -1112,14 +1116,14 @@ export default function Home() {
             className="z-20 flex size-auto items-center justify-start bg-none"
           >
             <img
-              src="images/logo-dark-3x.webp"
+              src="images/ECOMSIN.png"
               height={24}
               width={150}
               alt=""
             />
           </a>
           <div className="w-auto text-sm font-normal leading-snug text-gray-500/75">
-            ©2024 EcomVestors, Inc. All rights reserved.
+            ©2024 Ecomsin, Inc. All rights reserved.
           </div>
         </div>
       </div>
