@@ -7,6 +7,8 @@ import Video from "../components/video";
 import ReactPlayer from "react-player";
 import Particles from "./particles";
 import dynamic from "next/dynamic";
+import { red } from "@mui/material/colors";
+import PricingTab, { PricingTable } from "@/components/pricing-table";
 
 export default function Home() {
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
@@ -67,7 +69,7 @@ export default function Home() {
               <div className="mb-8 flex justify-center">
                 <a href="flex size-auto items-center justify-start bg-none">
                   <img
-                    src="/images/logo-dark-3x.webp"
+                    src="/images/ECOMSIN.png"
                     width={250}
                     height={50}
                     alt=""
@@ -641,7 +643,7 @@ export default function Home() {
                 }
               >
                 <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
-                  What will I learn in the EcomVestors Master Program?
+                  What will I learn in the EcomSin Master Program?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -754,7 +756,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <section>
+        <PricingTable />
+      </section>
       <section className="mb-20 flex w-full flex-col items-center justify-between">
         <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate px-4 sm:px-8 lg:px-24">
@@ -765,7 +769,7 @@ export default function Home() {
                   className="z-20 flex size-auto items-center justify-start bg-none"
                 >
                   <img
-                    src="/images/logo-dark-3x.webp"
+                    src="/images/ECOMSIN.png"
                     width={250}
                     height={50}
                     alt=""
@@ -1137,7 +1141,7 @@ export default function Home() {
             />
           </a>
           <div className="w-auto text-sm font-normal leading-snug text-gray-500/75">
-            ©2024 EcomVestors, Inc. All rights reserved.
+            ©2024 Ecomsin, Inc. All rights reserved.
           </div>
         </div>
       </div>
