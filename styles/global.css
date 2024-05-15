@@ -55,9 +55,20 @@
   border: 2px solid #3b82f6;
   box-shadow: -407px 0 0 400px #3b82f6;
 }
+
 #__next{
   width: 100%;
 }
+
+.wistia_responsive_wrapper div{
+  border-radius: 15px;
+}
+
+.wistia_responsive_wrapper{
+  border: 10px solid rgba(255, 255, 255, 0.15);
+  border-radius: 25px;
+}
+
 @layer base {
 
   [type="text"],
