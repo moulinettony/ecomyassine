@@ -4,7 +4,6 @@ import Typography from "@mui/material/Typography";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import Video from "../components/video";
-import ReactPlayer from "react-player";
 import Particles from "./particles";
 import dynamic from "next/dynamic";
 import { red } from "@mui/material/colors";
