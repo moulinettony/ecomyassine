@@ -3,8 +3,8 @@ import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
-import ReactPlayer from "react-player";
-import Particles from "./particles"; 
+import Video from "../components/video";
+import Particles from "./particles";
 import dynamic from "next/dynamic";
 import { red } from "@mui/material/colors";
 import PricingTab, { PricingTable } from "@/components/pricing-table";
@@ -25,7 +25,7 @@ export default function Home() {
   const handleOptionChange3 = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedOption3(event.target.value);
   };
-  
+
   const toggleAccordion = () => {
     setIsAccordionOpen(!isAccordionOpen);
   };
@@ -34,6 +34,19 @@ export default function Home() {
     (panel: string) => (event: React.ChangeEvent<{}>, isExpanded: boolean) => {
       setExpanded(isExpanded ? panel : null);
     };
+
+  useEffect(() => {
+    // Function to dynamically load scripts
+    const loadScript = (src: string) => {
+      const script = document.createElement("script");
+      script.src = src;
+      script.async = true;
+      document.body.appendChild(script);
+    };
+
+    loadScript("https://fast.wistia.com/embed/medias/jgb3pqs49i.jsonp");
+    loadScript("https://fast.wistia.com/assets/external/E-v1.js");
+  }, []);
 
   return (
     <div className="overflow-hidden">
@@ -47,9 +60,9 @@ export default function Home() {
       <Particles
         className="absolute inset-0 z-[-5] animate-fade-in"
         quantity={100}
-      /> 
+      />
       <section className="flex w-full flex-col items-center justify-between">
-        <div className="relative flex h-auto w-full flex-col items-center justify-center">
+        <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate">
             <div className="container relative mx-auto my-4 w-full max-w-7xl rounded-3xl px-4 pt-16 sm:my-10 sm:px-6 sm:pt-24 md:px-8 lg:pt-20">
               <div className="mb-8 flex justify-center">
@@ -90,6 +103,9 @@ export default function Home() {
                   >
                     Become a Partner
                   </a>
+                </div>
+                <div className="rounded mt-12">
+                  <Video />
                 </div>
                 <div className="relative mt-20 flex flex-col items-center justify-center gap-5">
                   <div className="flex w-full flex-row items-center justify-center">
@@ -206,7 +222,7 @@ export default function Home() {
         </div>
       </section>
       <section className="mt-10 flex w-full flex-col items-center justify-between md:mt-20">
-        <div className="relative flex h-auto w-full flex-col items-center justify-center">
+        <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate">
             <div className="container relative mx-auto mt-10 w-full max-w-7xl rounded-3xl px-4 sm:mb-10 sm:px-6 md:px-8">
               <div className="mb-8 flex justify-center">
@@ -384,7 +400,7 @@ export default function Home() {
         </div>
       </section>
       <section className="mt-5 flex w-full flex-col items-center justify-between md:mt-20">
-        <div className="relative flex h-auto w-full flex-col items-center justify-center">
+        <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate">
             <div className="container relative mx-auto my-4 w-full max-w-7xl rounded-3xl px-4 sm:my-10 sm:px-6 md:px-8">
               <div className="mb-8 flex justify-center">
@@ -497,9 +513,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-     {/*  
+      {/*  
      <section className="mt-10 flex w-full flex-col items-center justify-between md:mt-20">
-        <div className="flex h-auto w-full flex-col items-center justify-center">
+        <div className="z-[5] flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate">
             <div className="container relative mx-auto my-10 w-full max-w-7xl rounded-3xl px-4 sm:px-6 md:px-8">
               <div className="mb-8 flex justify-center">
@@ -612,7 +628,7 @@ export default function Home() {
                 Answers.
               </h2>
               <p className="mt-6 text-base leading-8 text-gray-400">
-                FAQs for the EcomSin Master Program.
+                FAQs for the EcomVestors Master Program.
               </p>
             </div>
           </div>
@@ -628,7 +644,7 @@ export default function Home() {
                   <ExpandMoreIcon className="transition-transform fill-white duration-200" />
                 }
               >
-                <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all hover:underline">
+                <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
                   What will I learn in the EcomSin Master Program?
                 </Typography>
               </AccordionSummary>
@@ -653,7 +669,7 @@ export default function Home() {
                   <ExpandMoreIcon className="transition-transform fill-white duration-200" />
                 }
               >
-                <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all hover:underline">
+                <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
                   How does the program work?
                 </Typography>
               </AccordionSummary>
@@ -680,7 +696,7 @@ export default function Home() {
                   <ExpandMoreIcon className="transition-transform fill-white duration-200" />
                 }
               >
-                <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all hover:underline">
+                <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
                   Where can I find help?
                 </Typography>
               </AccordionSummary>
@@ -703,7 +719,7 @@ export default function Home() {
                   <ExpandMoreIcon className="transition-transform fill-white duration-200" />
                 }
               >
-                <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all hover:underline">
+                <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
                   What's expected of me?
                 </Typography>
               </AccordionSummary>
@@ -728,7 +744,7 @@ export default function Home() {
                   <ExpandMoreIcon className="transition-transform fill-white duration-200" />
                 }
               >
-                <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all hover:underline">
+                <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
                   Still have more questions?
                 </Typography>
               </AccordionSummary>
@@ -746,7 +762,7 @@ export default function Home() {
         <PricingTable/>
       </section>
       <section className="mb-20 flex w-full flex-col items-center justify-between">
-        <div className="relative flex h-auto w-full flex-col items-center justify-center">
+        <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate px-4 sm:px-8 lg:px-24">
             <div className="container relative mx-auto my-10 w-full max-w-7xl rounded-3xl border border-gray-800/50 bg-gray-950/50 px-4 py-4 backdrop-blur-lg sm:px-8 sm:py-8 md:px-16 lg:px-24 lg:py-28">
               <div className="mb-8 flex justify-center">
@@ -813,7 +829,7 @@ export default function Home() {
         </div>
       </section>
       <section className="container mx-auto relative mt-20 flex w-full max-w-7xl flex-col items-center justify-center gap-5 px-4 text-center sm:px-6 md:px-8">
-        <div className="flex w-full flex-row items-center justify-center">
+        <div className="z-20 flex w-full flex-row items-center justify-center">
           <div className="group  relative -mr-4">
             <span className="flex shrink-0 overflow-hidden border-gray-950 relative !m-0 size-12 rounded-full border-2 !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105">
               <img
@@ -1125,7 +1141,7 @@ export default function Home() {
             className="z-20 flex size-auto items-center justify-start bg-none"
           >
             <img
-              src="images/ECOMSIN.png"
+              src="images/logo-dark-3x.webp"
               height={24}
               width={150}
               alt=""
