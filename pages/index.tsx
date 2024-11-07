@@ -8,6 +8,7 @@ import Particles from "./particles";
 import dynamic from "next/dynamic";
 import { red } from "@mui/material/colors";
 import PricingTab, { PricingTable } from "@/components/pricing-table";
+import AvantagesTab from "@/components/avantages";
 export default function Home() {
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -44,13 +45,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Particles
-        className="absolute inset-0 z-[1] animate-fade-in"
+        className="absolute inset-0 z-[-5] animate-fade-in"
         quantity={100}
       /> 
       <section className="flex w-full flex-col items-center justify-between">
         <div className="relative flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate">
-            <div className="container relative mx-auto my-4 w-full max-w-7xl rounded-3xl px-4 pt-16 sm:my-10 sm:px-6 sm:pt-24 md:px-8 lg:pt-28">
+            <div className="container relative mx-auto my-4 w-full max-w-7xl rounded-3xl px-4 pt-16 sm:my-10 sm:px-6 sm:pt-24 md:px-8 lg:pt-20">
               <div className="mb-8 flex justify-center">
                 <a href="flex size-auto items-center justify-start bg-none">
                   <img
@@ -351,6 +352,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            <section className="w-full py-10 sm:py-24 md:py-32 h-auto">
+              <AvantagesTab/>
+            </section>
             <div
               className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
               aria-hidden="true"
@@ -462,32 +467,31 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full py-10 sm:py-24 md:py-32">
-        <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-4 sm:px-6 md:px-8 xl:grid-cols-2">
+      
+              
+        <div className="mx-auto max-w-7xl gap-x-8 gap-y-20 px-4 sm:px-6 md:px-8 xl:grid-cols-1 bg-slate-900 rounded-[40px] text-center p-15">
+                <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl my-4 pt-10">
+                تعرف على عاصم الكيحل<br/>
+                  
+                  <span className="broken leading-[1.6] font-bold sm:text-[2.75rem]">
+                    
+                  </span>
+                  
+                </h2>
+          <div className="h-[2px] w-44 bg-gradient-to-r from-blue-600 to-indigo-400 mx-auto my-5"></div>
           <div className="relative flex h-auto w-full flex-col items-center justify-center">
             <img
-              className="aspect-square size-full rounded-3xl object-cover"
-              src="images/yassine.jpeg"
+              className="aspect-square rounded-3xl object-cover"
+              src="https://go.mindeo.com/hosted/images/fb/976200f2af47ec9aa20e1f012dd09a/Yomi-fond-Mindeo.png"
+              width="350"
               alt=""
             />
           </div>
-          <div className="flex h-full w-full max-w-2xl flex-col items-start justify-center">
-            <div className="mb-8 flex justify-start">
-              <div className="relative inline-block bg-gradient-to-r from-blue-600 to-indigo-400 bg-clip-text text-sm font-bold uppercase leading-6 text-transparent">
-                Who's Me?
-              </div>
-            </div>
-            <div className="text-start">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
-                Meet Yassine Fallahi
-              </h2>
-              <p className="mt-6 text-base leading-8 text-gray-400">
-                A dedicated 21-year-old entrepreneur from Morocco who started
-                his journey alone, without any handouts. Driven by his passion
-                for e-commerce, he's dedicated himself to sharing his knowledge
-                and helping thousands. Aassim's commitment extends to empowering
-                communities in Morocco and Eastern Europe. His expertise lies in
-                guiding individuals through the ins and outs of the Cash on
-                Delivery (COD) market.
+          <div className="flex  flex-col items-start justify-center">
+            
+            <div className="text-center mx-auto">
+              <p className="mt-6 textpresentation tracking-normal">
+                <b>لأعمال عبر الإنترنت. بدأت رحلتي في المدرسة الثانوية، حيث كنت أبحث عن شيء مختلف عن المسار التقليدي. ومن هنا بدأت أدرك الإمكانيات الهائلة لريادة الأعج EV Master وأسست شركة Ecomvestors، التي تهدف إلى مساعدة البائعين على العمل بسلاسة في السوق الأوروبية. يُعد برنامج EV Master ثورة حقيقية، حيث يدمج أسرار اللوجستيات والأدوات المتقدمة والأساليب الخفية مع مجال التعليم الإلكتروني المتنامي بسرعة. هذا البرنامج يمنح رواد الأعمال الشباب الفرصة لخلق تأثير إيجابي هائل في العالم، مع تحقيق أرباح كبيرة. EV هو المنصة المثالية لرواد الأعمال الطموحين الذين يريدون التخلص من الأساليب التقليدية الروتينية ويطمحون لنقل أعمالهم عبر الإنترنت إلى مستوى آخر. انضم إليّ وإلى أكثر من 240 رائد أعمال</b>
               </p>
             </div>
           </div>
@@ -595,14 +599,14 @@ export default function Home() {
       </section>
       */}
       <section className="w-full py-24 sm:py-32">
-        <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-2">
-          <div className="max-w-2xl">
-            <div className="mb-8 flex justify-start">
+        <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-1">
+          <div className="max-w-2xl mx-auto">
+            <div className="mb-8 flex justify-center">
               <div className="relative inline-block bg-gradient-to-r from-blue-600 to-indigo-400 bg-clip-text text-sm font-bold uppercase leading-6 text-transparent">
                 Frequently Asked Questions
               </div>
             </div>
-            <div className="text-start">
+            <div className="text-center">
               <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
                 Got Questions? We've Got <br />
                 Answers.
@@ -738,7 +742,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="w-6/7 ml-20 mr-20 ">
         <PricingTable/>
       </section>
       <section className="mb-20 flex w-full flex-col items-center justify-between">
@@ -901,7 +905,7 @@ export default function Home() {
           كل شيء يتم العناية به من أجلك.
         </p>
       </section>
-      <section className="w-full py-24 sm:py-32">
+      <section className="w-full pt-24 sm:pt-32">
         <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-2">
           <div className="max-w-md">
             <div className="mb-8 flex justify-start">
@@ -1108,6 +1112,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <img
+          className="centerImage"
+          src="images/picbas.avif"
+          alt=""
+                  />
       </section>
       <div className="relative z-10 flex h-auto w-full flex-col flex-wrap items-center justify-center gap-20 border-t border-blue-950 bg-gray-950 px-20 py-5 text-center md:flex-row">
         <div className="flex size-auto flex-1 flex-col items-center justify-start gap-10 md:flex-row">

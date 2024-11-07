@@ -254,7 +254,6 @@ export default function Particles({
       className={className}
       ref={canvasContainerRef}
       aria-hidden="true"
-      onClick={handleClick}
     >
       <canvas ref={canvasRef} />
     </div>
