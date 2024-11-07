@@ -64,7 +64,7 @@ export default function Home() {
       <section className="flex w-full flex-col items-center justify-between">
         <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate">
-            <div className="container relative mx-auto my-4 w-full max-w-7xl rounded-3xl px-4 pt-16 sm:my-10 sm:px-6 sm:pt-24 md:px-8 lg:pt-20">
+            <div className="container relative mx-auto my-4 w-full max-w-7xl rounded-3xl px-4 sm:my-10 sm:px-6  md:px-8 ">
               <div className="mb-8 flex justify-center">
                 <a href="flex size-auto items-center justify-start bg-none">
                   <img
@@ -76,8 +76,8 @@ export default function Home() {
                 </a>
               </div>
               <div className="mb-8 flex justify-center">
-                <div className="relative inline-block bg-gradient-to-r from-blue-600 to-indigo-400 bg-clip-text text-sm font-bold uppercase leading-6 text-transparent">
-                  Master Program
+                <div className="relative inline-block bg-gradient-to-r from-green-600 to-red-400 bg-clip-text text-sm font-bold uppercase leading-6 text-transparent">
+                برنامج الفلاح
                 </div>
               </div>
               <div className="text-center">
@@ -90,6 +90,10 @@ export default function Home() {
                   MasterProgram, Europe's premier gateway to mastering Cash on
                   Delivery strategies for online business growth.
                 </p>
+               
+                <div className="rounded mt-12">
+                  <Video />
+                </div>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2">
                   <a
                     href="#"
@@ -103,9 +107,6 @@ export default function Home() {
                   >
                     Become a Partner
                   </a>
-                </div>
-                <div className="rounded mt-12">
-                  <Video />
                 </div>
                 <div className="relative mt-20 flex flex-col items-center justify-center gap-5">
                   <div className="flex w-full flex-row items-center justify-center">
