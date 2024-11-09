@@ -107,15 +107,6 @@ export default function AvantagesTab() {
               </p>
             </div>
           </div>
-
-        <div className="relative mt-10 flex flex-row items-center justify-center gap-2 ">
-                  <a
-                    href="#"
-                    className="btn"
-                  >
-                    <span>Become a Partner</span>
-                  </a>
-                </div>
         </div>
     );
   }
