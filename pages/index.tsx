@@ -12,9 +12,9 @@ import AvantagesTab from "@/components/avantages";
 export default function Home() {
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
-  const [selectedOption, setSelectedOption] = useState<string>("option1");
-  const [selectedOption2, setSelectedOption2] = useState<string>("option1");
-  const [selectedOption3, setSelectedOption3] = useState<string>("option1");
+  const [selectedOption, setSelectedOption] = useState<string>("");
+  const [selectedOption2, setSelectedOption2] = useState<string>("");
+  const [selectedOption3, setSelectedOption3] = useState<string>("");
 
   const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedOption(event.target.value);
@@ -77,33 +77,27 @@ export default function Home() {
               </div>
               <div className="mb-8 flex justify-center">
                 <div className="relative inline-block bg-gradient-to-r from-green-600 to-red-400 bg-clip-text text-sm font-bold uppercase leading-6 text-transparent">
-                برنامج الفلاح
+                  برنامج الفلاح
                 </div>
               </div>
               <div className="text-center">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-50 sm:text-6xl">
-                بوابتك الرائدة لثورة الدفع عند الاستلام وتحقيق النجاح في التجارة الإلكترونية بأوروبا
-
+                  بوابتك الرائدة لثورة الدفع عند الاستلام وتحقيق النجاح في
+                  التجارة الإلكترونية بأوروبا
                 </h1>
                 <div className="rounded mt-12">
                   <Video />
                 </div>
                 <p className="mt-6 text-lg leading-8 text-gray-400">
-                انطلق مع برنامج EV Master لتعلّم أسرار الدفع عند الاستلام وتحقيق نجاح ملموس في التجارة الإلكترونية. اكتشف كيف تزيد أرباحك من خلال استراتيجيات دفع مبتكرة في أوروبا.
-
-
+                  انطلق مع برنامج EV Master لتعلّم أسرار الدفع عند الاستلام
+                  وتحقيق نجاح ملموس في التجارة الإلكترونية. اكتشف كيف تزيد
+                  أرباحك من خلال استراتيجيات دفع مبتكرة في أوروبا.
                 </p>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2">
-                  <a
-                    href="#"
-                    className="button-33"
-                  >
+                  <a href="#" className="button-33">
                     كن شريكًا
                   </a>
-                  <a
-                    href="#"
-                    className="button-34"
-                  >
+                  <a href="#" className="button-34">
                     احجز استشارة
                   </a>
                 </div>
@@ -188,13 +182,14 @@ export default function Home() {
                     </div>
                   </div>
                   <p className="max-w-md text-sm text-gray-400">
-                  يسعدنا أن نرحب بك في مجتمع رواد الأعمال المغربي الذين يحدثون ثورة في نماذج أعمال الدفع عند الاستلام في أوروبا.
+                    يسعدنا أن نرحب بك في مجتمع رواد الأعمال المغربي الذين يحدثون
+                    ثورة في نماذج أعمال الدفع عند الاستلام في أوروبا.
                   </p>
                 </div>
               </div>
             </div>
             <div
-              className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+              className="absolute inset-x-0 top-[calc(100%-13rem)] -transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
               aria-hidden="true"
             >
               <div
@@ -206,7 +201,7 @@ export default function Home() {
               ></div>
             </div>
             <div
-              className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+              className="absolute inset-x-0 -top-40 -transform-gpu overflow-hidden blur-3xl sm:-top-80"
               aria-hidden="true"
             >
               <div
@@ -231,92 +226,84 @@ export default function Home() {
               </div>
               <div className="text-center">
                 <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
-                نموذج الدفع عند الاستلام الحالي متعثر.{" "}
-                  <span className="broken text-3xl font-bold sm:text-[2.75rem]">
-                    
-                  </span>
+                  نموذج الدفع عند الاستلام الحالي متعثر.{" "}
+                  <span className="broken text-3xl font-bold sm:text-[2.75rem]"></span>
                   .
                 </h2>
                 <p className="mt-6 text-base leading-8 text-gray-600">
-                قل وداعاً للتكاليف المرتفعة والأسواق المزدحمة
+                  قل وداعاً للتكاليف المرتفعة والأسواق المزدحمة
                 </p>
               </div>
               <div className="flex flex-col place-content-center place-items-center items-center justify-center gap-4 py-10 md:grid md:grid-cols-2 lg:grid-cols-4">
                 <div className="flex h-full flex-col items-start justify-start rounded-3xl border border-gray-800/50 bg-gray-950/50 p-7 text-start shadow-2xl shadow-blue-500/10 backdrop-blur-md">
                   <div className="mb-8  size-16 items-center justify-center rounded-xl bg-gray-900 mx-auto">
-                  <img
-                    className="rounded-xl shadow-2xl shadow-blue-500/10 backdrop-blur-md"
-                  
-                    src="images/Flag_of_Algeria_Flat_Round_Corner-64x64.png"
-                    alt=""
-                  />
+                    <img
+                      className="rounded-xl shadow-2xl shadow-blue-500/10 backdrop-blur-md"
+                      src="images/Flag_of_Algeria_Flat_Round_Corner-64x64.png"
+                      alt=""
+                    />
                   </div>
                   <h3 className="mb-2 text-xl font-bold text-white text-right">
-                  رسوم الدفع عند الاستلام المرتفعة في أوروب
+                    رسوم الدفع عند الاستلام المرتفعة في أوروب
                   </h3>
                   <p className="text-gray-400 text-right">
-                  80% من خدمات الدفع عند الاستلام تعتمد على إعادة البيع دون مستودعات خاصة، مما يؤدي إلى رسوم باهظة تصعّب تحقيق الأرباح.
+                    80% من خدمات الدفع عند الاستلام تعتمد على إعادة البيع دون
+                    مستودعات خاصة، مما يؤدي إلى رسوم باهظة تصعّب تحقيق الأرباح.
                   </p>
                 </div>
                 <div className="flex h-full flex-col items-start justify-start rounded-3xl border border-gray-800/50 bg-gray-950/50 p-7 text-start shadow-2xl shadow-blue-500/10 backdrop-blur-md">
-                <div className="mb-8  size-16 items-center justify-center rounded-xl bg-gray-900 mx-auto">
-                  <img
-                    className="rounded-xl shadow-2xl shadow-blue-500/10 backdrop-blur-md"
-                  
-                    src="images/Flag_of_African_Union_Flat_Round_Corner-64x64.png"
-                    alt=""
-                  />
+                  <div className="mb-8  size-16 items-center justify-center rounded-xl bg-gray-900 mx-auto">
+                    <img
+                      className="rounded-xl shadow-2xl shadow-blue-500/10 backdrop-blur-md"
+                      src="images/Flag_of_African_Union_Flat_Round_Corner-64x64.png"
+                      alt=""
+                    />
                   </div>
                   <h3 className="mb-2 text-xl font-bold text-white text-right">
-                  رسوم الدفع عند الاستلام المرتفعة في أوروب
-
+                    رسوم الدفع عند الاستلام المرتفعة في أوروب
                   </h3>
                   <p className="text-gray-400 text-right">
-                  مع ازدحام الأسواق في أوروبا الغربية، نحن نفتح آفاقاً جديدة مع برنامج EV، مستهدفين الفرص الواعدة في أوروبا الشرقية.
+                    مع ازدحام الأسواق في أوروبا الغربية، نحن نفتح آفاقاً جديدة
+                    مع برنامج EV، مستهدفين الفرص الواعدة في أوروبا الشرقية.
                   </p>
                 </div>
                 <div className="flex h-full flex-col items-start justify-start rounded-3xl border border-gray-800/50 bg-gray-950/50 p-7 text-start shadow-2xl shadow-blue-500/10 backdrop-blur-md">
-                <div className="mb-8  size-16 items-center justify-center rounded-xl bg-gray-900 mx-auto">
-                  <img
-                    className="rounded-xl shadow-2xl shadow-blue-500/10 backdrop-blur-md"
-                  
-                    src="images/Flag_of_Saudi_Arabia_Flat_Round_Corner-64x64.png"
-                    alt=""
-                  />
+                  <div className="mb-8  size-16 items-center justify-center rounded-xl bg-gray-900 mx-auto">
+                    <img
+                      className="rounded-xl shadow-2xl shadow-blue-500/10 backdrop-blur-md"
+                      src="images/Flag_of_Saudi_Arabia_Flat_Round_Corner-64x64.png"
+                      alt=""
+                    />
                   </div>
                   <h3 className="mb-2 text-xl font-bold text-white text-right">
-                  هل مللت من الطرق التقليدية؟
-
+                    هل مللت من الطرق التقليدية؟
                   </h3>
                   <p className="text-gray-400 text-right">
-                  استعد للسيطرة الكاملة مع فريقك الخاص ومركز اتصالك، وحقق توصيلات بأقل من 4 يورو لكل شحنة، لتجعل العمل مربحاً وممتعاً في آن واحد.
-
-
+                    استعد للسيطرة الكاملة مع فريقك الخاص ومركز اتصالك، وحقق
+                    توصيلات بأقل من 4 يورو لكل شحنة، لتجعل العمل مربحاً وممتعاً
+                    في آن واحد.
                   </p>
                 </div>
                 <div className="flex h-full flex-col items-start justify-start rounded-3xl border border-gray-800/50 bg-gray-950/50 p-7 text-start shadow-2xl shadow-blue-500/10 backdrop-blur-md">
-                <div className="mb-8  size-16 items-center justify-center rounded-xl bg-gray-900 mx-auto">
-                  <img
-                    className="rounded-xl shadow-2xl shadow-blue-500/10 backdrop-blur-md"
-                  
-                    src="images/Flag_of_Morocco_Flat_Round_Corner-64x64.png"
-                    alt=""
-                  />
+                  <div className="mb-8  size-16 items-center justify-center rounded-xl bg-gray-900 mx-auto">
+                    <img
+                      className="rounded-xl shadow-2xl shadow-blue-500/10 backdrop-blur-md"
+                      src="images/Flag_of_Morocco_Flat_Round_Corner-64x64.png"
+                      alt=""
+                    />
                   </div>
                   <h3 className="mb-2 text-xl font-bold text-white text-right">
-                  أسرار النجاح في الدفع عند الاستلام
-
+                    أسرار النجاح في الدفع عند الاستلام
                   </h3>
                   <p className="text-gray-400 text-right">
-                  تعرف على ما يجري فعلاً في نموذج أعمال الدفع عند الاستلام واستخدمه لتحقيق النجاح لصالحك.
-
-
+                    تعرف على ما يجري فعلاً في نموذج أعمال الدفع عند الاستلام
+                    واستخدمه لتحقيق النجاح لصالحك.
                   </p>
                 </div>
               </div>
             </div>
             <div
-              className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+              className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 --translate-y-1/2 transform-gpu blur-2xl"
               aria-hidden="true"
             >
               <div
@@ -328,7 +315,7 @@ export default function Home() {
               ></div>
             </div>
             <div
-              className="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+              className="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 --translate-y-1/2 transform-gpu blur-2xl"
               aria-hidden="true"
             >
               <div
@@ -343,8 +330,8 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full">
-              <AvantagesTab/>
-            </section>
+        <AvantagesTab />
+      </section>
       <section className="mt-5 flex w-full flex-col items-center justify-between md:mt-20">
         <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate">
@@ -365,27 +352,25 @@ export default function Home() {
               </div>
               <div className="mb-8 flex justify-center">
                 <div className="relative inline-block bg-gradient-to-r from-pink-600 to-red-400 bg-clip-text text-lg font-bold uppercase leading-6 text-transparent md:text-2xl">
-                برنامج مأسسة الفلاح
+                  برنامج مأسسة الفلاح
                 </div>
               </div>
               <div className="flex w-full flex-col items-center justify-center text-center">
                 <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
-                أتقن أسرار الدفع عند الاستلام بنجاح في أوروبا.
+                  أتقن أسرار الدفع عند الاستلام بنجاح في أوروبا.
                 </h2>
                 <p className="mt-6 max-w-3xl text-base leading-8 text-gray-600">
-                هل أنت مستعد لإتقان استراتيجيات الدفع عند الاستلام وتحقيق السيطرة الكاملة؟ برنامجنا يتيح لك تعلم كيفية اختبار أفكارك، التوسع بذكاء، والوصول إلى أرباح تتجاوز 10,000 دولار بسهولة. مع جميع الموارد والدعم الذي نقدمه، ستتمكن من بناء نجاح مستدام في مجال الدفع عند الاستلام في أوروبا.
+                  هل أنت مستعد لإتقان استراتيجيات الدفع عند الاستلام وتحقيق
+                  السيطرة الكاملة؟ برنامجنا يتيح لك تعلم كيفية اختبار أفكارك،
+                  التوسع بذكاء، والوصول إلى أرباح تتجاوز 10,000 دولار بسهولة. مع
+                  جميع الموارد والدعم الذي نقدمه، ستتمكن من بناء نجاح مستدام في
+                  مجال الدفع عند الاستلام في أوروبا.
                 </p>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2">
-                  <a
-                    href="#"
-                    className="button-33"
-                  >
+                  <a href="#" className="button-33">
                     كن شريكًا
                   </a>
-                  <a
-                    href="#"
-                    className="button-34"
-                  >
+                  <a href="#" className="button-34">
                     احجز استشارة
                   </a>
                 </div>
@@ -393,12 +378,12 @@ export default function Home() {
               <div className="flex flex-col place-content-center place-items-center items-center justify-center gap-4 pt-10 sm:pb-10 md:grid md:grid-cols-2 lg:grid-cols-2">
                 <div className="flex h-full flex-col text-right justify-start overflow-hidden rounded-3xl border border-gray-800/50 bg-gray-950/50 p-7  shadow-2xl shadow-blue-500/10 backdrop-blur-md">
                   <h3 className="mb-2 text-xl font-bold text-white">
-                  أحدث الطرق والهياكل
+                    أحدث الطرق والهياكل
                   </h3>
                   <p className="text-gray-400">
-                  كعضو في برنامج EV، ستحصل على وصول حصري إلى أكثر من 35 تحديث فيديو حول طرق وهياكل الدفع عند الاستلام. كن على اطلاع بأحدث المعلومات وتعلم الهياكل اللازمة لتأسيس عملك بنجاح.
-
-
+                    كعضو في برنامج EV، ستحصل على وصول حصري إلى أكثر من 35 تحديث
+                    فيديو حول طرق وهياكل الدفع عند الاستلام. كن على اطلاع بأحدث
+                    المعلومات وتعلم الهياكل اللازمة لتأسيس عملك بنجاح.
                   </p>
                   <div className="-mb-14 mt-8 flex w-full items-center justify-center">
                     <img
@@ -410,12 +395,13 @@ export default function Home() {
                 </div>
                 <div className="flex h-full flex-col text-right justify-start overflow-hidden rounded-3xl border border-gray-800/50 bg-gray-950/50 p-7 shadow-2xl shadow-blue-500/10 backdrop-blur-md">
                   <h3 className="mb-2 text-xl font-bold text-white">
-                  تدريب فردي يومي
+                    تدريب فردي يومي
                   </h3>
                   <p className="text-gray-400">
-                  في برنامج EV، نعمل جنبًا إلى جنب مع المدربين وفريقك لمساعدتك في تأسيس نموذج عملك للدفع عند الاستلام. من خلال التواصل اليومي وجلسات التدريب الفردي على قناة Slac الخاصة بك، نقدم لك أسهل طريقة للتعلم من خلال الممارسة.
-
-
+                    في برنامج EV، نعمل جنبًا إلى جنب مع المدربين وفريقك لمساعدتك
+                    في تأسيس نموذج عملك للدفع عند الاستلام. من خلال التواصل
+                    اليومي وجلسات التدريب الفردي على قناة Slac الخاصة بك، نقدم
+                    لك أسهل طريقة للتعلم من خلال الممارسة.
                   </p>
                   <div className="-mb-14 mt-8 flex w-full items-center justify-center">
                     <img
@@ -431,17 +417,12 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full py-10 sm:py-24 md:py-32">
-      
-              
         <div className="mx-auto max-w-7xl gap-x-8 gap-y-20 px-4 sm:px-6 md:px-8 xl:grid-cols-1 bg-slate-900 rounded-[40px] text-center p-15">
-                <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl my-4 pt-10">
-                تعرف على عاصم الكيحل<br/>
-                  
-                  <span className="broken leading-[1.6] font-bold sm:text-[2.75rem]">
-                    
-                  </span>
-                  
-                </h2>
+          <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl my-4 pt-10">
+            تعرف على عاصم الكيحل
+            <br />
+            <span className="broken leading-[1.6] font-bold sm:text-[2.75rem]"></span>
+          </h2>
           <div className="h-[2px] w-44 bg-gradient-to-r from-blue-600 to-indigo-400 mx-auto my-5"></div>
           <div className="relative flex h-auto w-full flex-col items-center justify-center">
             <img
@@ -452,10 +433,22 @@ export default function Home() {
             />
           </div>
           <div className="flex  flex-col items-start justify-center">
-            
             <div className="text-center mx-auto">
               <p className="mt-6 textpresentation tracking-normal">
-                <b>لأعمال عبر الإنترنت. بدأت رحلتي في المدرسة الثانوية، حيث كنت أبحث عن شيء مختلف عن المسار التقليدي. ومن هنا بدأت أدرك الإمكانيات الهائلة لريادة الأعج EV Master وأسست شركة Ecomvestors، التي تهدف إلى مساعدة البائعين على العمل بسلاسة في السوق الأوروبية. يُعد برنامج EV Master ثورة حقيقية، حيث يدمج أسرار اللوجستيات والأدوات المتقدمة والأساليب الخفية مع مجال التعليم الإلكتروني المتنامي بسرعة. هذا البرنامج يمنح رواد الأعمال الشباب الفرصة لخلق تأثير إيجابي هائل في العالم، مع تحقيق أرباح كبيرة. EV هو المنصة المثالية لرواد الأعمال الطموحين الذين يريدون التخلص من الأساليب التقليدية الروتينية ويطمحون لنقل أعمالهم عبر الإنترنت إلى مستوى آخر. انضم إليّ وإلى أكثر من 240 رائد أعمال</b>
+                <b>
+                  لأعمال عبر الإنترنت. بدأت رحلتي في المدرسة الثانوية، حيث كنت
+                  أبحث عن شيء مختلف عن المسار التقليدي. ومن هنا بدأت أدرك
+                  الإمكانيات الهائلة لريادة الأعج EV Master وأسست شركة
+                  Ecomvestors، التي تهدف إلى مساعدة البائعين على العمل بسلاسة في
+                  السوق الأوروبية. يُعد برنامج EV Master ثورة حقيقية، حيث يدمج
+                  أسرار اللوجستيات والأدوات المتقدمة والأساليب الخفية مع مجال
+                  التعليم الإلكتروني المتنامي بسرعة. هذا البرنامج يمنح رواد
+                  الأعمال الشباب الفرصة لخلق تأثير إيجابي هائل في العالم، مع
+                  تحقيق أرباح كبيرة. EV هو المنصة المثالية لرواد الأعمال
+                  الطموحين الذين يريدون التخلص من الأساليب التقليدية الروتينية
+                  ويطمحون لنقل أعمالهم عبر الإنترنت إلى مستوى آخر. انضم إليّ
+                  وإلى أكثر من 240 رائد أعمال
+                </b>
               </p>
             </div>
           </div>
@@ -499,7 +492,7 @@ export default function Home() {
                     </div>
                   ))}
                   {isOpen && (
-                    <div className="h-screen py-20 z-10 px-10 fixed top-0 w-screen backdrop-blur-lg bg-[#00000073]">
+                    <div className="h-screen py-20 px-10 fixed top-0 w-screen backdrop-blur-lg bg-[#00000073]">
                       <button
                         className="text-5xl opacity-60 rotate-45 absolute top-[15px] right-[25px] text-white"
                         onClick={() => setIsOpen(false)}
@@ -707,7 +700,7 @@ export default function Home() {
         </div>
       </section>
       <section className="w-6/7 lg:ml-20 lg:mr-20 text-center">
-        <PricingTable/>
+        <PricingTable />
       </section>
       <section className="mb-20 flex w-full flex-col items-center justify-between">
         <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
@@ -755,7 +748,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+            <div className="absolute inset-x-0 top-[calc(100%-13rem)] -transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
               <div
                 className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-blue-600 to-indigo-500 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
                 style={{
@@ -764,7 +757,7 @@ export default function Home() {
                 }}
               ></div>
             </div>
-            <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+            <div className="absolute inset-x-0 -top-40 -transform-gpu overflow-hidden blur-3xl sm:-top-80">
               <div
                 className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-600 to-indigo-500 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
                 style={{
@@ -869,8 +862,8 @@ export default function Home() {
           كل شيء يتم العناية به من أجلك.
         </p>
       </section>
-      <section className="w-full pt-24 sm:pt-32">
-        <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-2">
+      <section className="w-full pt-24 sm:pt-28">
+        {/*<div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-2">
           <div className="max-w-md">
             <div className="mb-8 flex justify-start">
               <div className="relative inline-block bg-gradient-to-r from-blue-600 to-indigo-400 bg-clip-text text-sm font-bold uppercase leading-6 text-transparent">
@@ -888,7 +881,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="relative z-10 flex h-auto w-full flex-col items-start justify-start">
+          <div className="relative flex h-auto w-full flex-col items-start justify-start">
             <div className="w-full text-white">
               <form className="w-full space-y-6" action="">
                 <div className="space-y-2 flex w-full flex-col items-start justify-start gap-2">
@@ -1075,14 +1068,207 @@ export default function Home() {
               </form>
             </div>
           </div>
-        </div>
-        <img
-          className="centerImage"
-          src="images/picbas.avif"
-          alt=""
+        </div>*/}
+
+        <div className="relative flex h-auto bg-slate-900 rounded-xl w-full flex-col items-start max-lg:px-6 p-10 justify-start max-w-[620px] mx-auto">
+          <div className="mx-auto pb-8">
+            <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
+              New Member Registration
+            </h2>
+          </div>
+          <div className="w-full text-white">
+            <form className="w-full space-y-6" action="">
+              <div className="space-y-2 flex w-full flex-col items-start justify-start gap-2">
+                <label
+                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  htmlFor=""
+                >
+                  Full Name
+                </label>
+                <div className="flex w-full flex-1 flex-row items-stretch justify-start gap-2">
+                  <input
+                    placeholder="Yassine Fallahi"
+                    name="fullname"
+                    type="text"
+                    className="flex h-10 rounded-lg border border-gray-800 bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full"
                   />
+                </div>
+              </div>
+              <div className="space-y-2 flex w-full flex-col items-start justify-start gap-2">
+                <label
+                  htmlFor=""
+                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                >
+                  What is your age range? *
+                </label>
+                <div
+                  className="w-full grid lg:grid-cols-2 grid-cols-1 gap-2 lg:gap-8 gap-x-12"
+                  role="radiogroup"
+                >
+                  <div className="flex items-center space-x-3 space-y-0">
+                    <label className="w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
+                      <input
+                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                        type="radio"
+                        value="option1"
+                        checked={selectedOption === "option1"}
+                        onChange={handleOptionChange}
+                      />
+                      18-24
+                    </label>
+                  </div>
+                  <div className="flex items-center space-x-3 space-y-0">
+                    <label className="w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
+                      <input
+                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                        type="radio"
+                        value="option2"
+                        checked={selectedOption === "option2"}
+                        onChange={handleOptionChange}
+                      />
+                      25-34
+                    </label>
+                  </div>
+                  <div className="flex items-center space-x-3 space-y-0">
+                    <label className="w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
+                      <input
+                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                        type="radio"
+                        value="option3"
+                        checked={selectedOption === "option3"}
+                        onChange={handleOptionChange}
+                      />
+                      35-44
+                    </label>
+                  </div>
+                  <div className="flex items-center space-x-3 space-y-0">
+                    <label className="w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
+                      <input
+                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                        type="radio"
+                        value="option4"
+                        checked={selectedOption === "option4"}
+                        onChange={handleOptionChange}
+                      />
+                      45+
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-2 flex w-full flex-col items-start justify-start gap-2">
+                <label
+                  htmlFor=""
+                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                >
+                  Select only one option: *
+                </label>
+                <div
+                  className="w-full grid lg:grid-cols-3 grid-cols-1 gap-2 lg:gap-4 gap-x-12"
+                  role="radiogroup"
+                >
+                  <div className="flex items-center space-x-3 space-y-0">
+                    <label className="text-sm w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
+                      <input
+                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                        type="radio"
+                        value="option1"
+                        checked={selectedOption2 === "option1"}
+                        onChange={handleOptionChange2}
+                      />
+                      Male
+                    </label>
+                  </div>
+                  <div className="flex items-center space-x-3 space-y-0">
+                    <label className="text-sm w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
+                      <input
+                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                        type="radio"
+                        value="option2"
+                        checked={selectedOption2 === "option2"}
+                        onChange={handleOptionChange2}
+                      />
+                      Female
+                    </label>
+                  </div>
+                  <div className="flex items-center space-x-3 space-y-0">
+                    <label className="text-sm w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
+                      <input
+                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                        type="radio"
+                        value="option3"
+                        checked={selectedOption2 === "option3"}
+                        onChange={handleOptionChange2}
+                      />
+                      Rather not say
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-2 flex w-full flex-col items-start justify-start gap-2">
+                <label
+                  htmlFor=""
+                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                >
+                  What is the highest degree or level of school you have
+                  completed? *
+                </label>
+                <div
+                  className="gap-2 w-full flex flex-col space-y-1"
+                  role="radiogroup"
+                >
+                  <div className="flex items-center space-x-3 space-y-0">
+                    <label className="w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
+                      <input
+                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                        type="radio"
+                        value="option1"
+                        checked={selectedOption3 === "option1"}
+                        onChange={handleOptionChange3}
+                      />
+                      High school
+                    </label>
+                  </div>
+                  <div className="flex items-center space-x-3 space-y-0">
+                    <label className="w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
+                      <input
+                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                        type="radio"
+                        value="option2"
+                        checked={selectedOption3 === "option2"}
+                        onChange={handleOptionChange3}
+                      />
+                      Associate degree (e.g. AA, AS)
+                    </label>
+                  </div>
+                  <div className="flex items-center space-x-3 space-y-0">
+                    <label className="w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
+                      <input
+                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                        type="radio"
+                        value="option3"
+                        checked={selectedOption3 === "option3"}
+                        onChange={handleOptionChange3}
+                      />
+                      Doctorate (e.g. PhD, EdD)
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div className="flex w-full flex-row items-center justify-end gap-2">
+                <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-600 bg-gray-950 font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-gray-900 hover:text-blue-600 active:bg-blue-950 active:text-blue-500 h-10 px-4 py-2 rounded-full">
+                  Reset
+                </button>
+                <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-500 bg-white font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-blue-50 hover:text-blue-600 active:bg-blue-100 h-10 px-4 py-2 rounded-full">
+                  Send your Request
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <img className="centerImage" src="images/picbas.avif" alt="" />
       </section>
-      <div className="relative z-10 flex h-auto w-full flex-col flex-wrap items-center justify-center gap-20 border-t border-blue-950 bg-gray-950 px-20 py-5 text-center md:flex-row">
+      <div className="relative flex h-auto w-full flex-col flex-wrap items-center justify-center gap-20 border-t border-blue-950 bg-gray-950 px-20 py-5 text-center md:flex-row">
         <div className="flex size-auto flex-1 flex-col items-center justify-start gap-10 md:flex-row">
           <a
             href=""
