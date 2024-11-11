@@ -28,7 +28,7 @@ function PricingTab(props: PricingTabProps) {
           <div className="inline-flex items-baseline mb-2">
             <span className="text-slate-200 font-bold text-3xl">$</span>
             <span className="text-slate-200 font-bold text-4xl">{props.yearly ? props.price.yearly : props.price.monthly}</span>
-            <span className="text-slate-500 font-medium">/mo</span>
+            <span className="crossed-out text-red-500 relative text-xl font-semibold">/60$<span className='h-[1px] absolute rotate-[145deg] w-[80%] bg-white left-2 top-[50%]'></span><span className='h-[1px] absolute rotate-[35deg] w-[80%] bg-white left-2 top-[50%]'></span></span>
           </div>
           <div className="text-sm text-slate-500 mb-5">{props.planDescription}</div>
           <a className="relative z-[20] w-full inline-flex justify-center whitespace-nowrap rounded-lg bg-indigo-500 px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-indigo-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150" href="#0">

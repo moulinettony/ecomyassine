@@ -219,9 +219,9 @@ export default function Home() {
         <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate">
             <div className="container relative mx-auto mt-10 w-full max-w-7xl rounded-3xl px-4 sm:mb-10 sm:px-6 md:px-8">
-              <div className="mb-8 flex justify-center">
-                <div className="relative inline-block bg-gradient-to-r from-blue-600 to-indigo-400 bg-clip-text text-sm font-bold uppercase leading-6 text-transparent">
-                  The Old Way
+            <div className="mb-8 flex justify-center">
+                <div className="relative inline-block bg-gradient-to-r from-pink-600 to-red-400 bg-clip-text text-lg font-bold uppercase leading-6 text-transparent md:text-2xl">
+                برنامج مأسسة الفلاح
                 </div>
               </div>
               <div className="text-center">
@@ -703,13 +703,13 @@ export default function Home() {
         <PricingTable />
       </section>
       <section className="mb-20 flex w-full flex-col items-center justify-between">
-        <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
+        <div className="relative flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate px-4 sm:px-8 lg:px-24">
-            <div className="container relative mx-auto my-10 w-full max-w-7xl rounded-3xl border border-gray-800/50 bg-gray-950/50 px-4 py-4 backdrop-blur-lg sm:px-8 sm:py-8 md:px-16 lg:px-24 lg:py-28">
+            <div className="container relative mx-auto my-10 w-full max-w-7xl rounded-3xl border border-gray-800/50 bg-gray-950/50 px-4 py-4 backdrop-blur-lg sm:px-8 sm:py-8 md:px-16 lg:px-24 lg:py-15">
               <div className="mb-8 flex justify-center">
                 <a
                   href=""
-                  className="z-20 flex size-auto items-center justify-start bg-none"
+                  className=" flex size-auto items-center justify-start bg-none"
                 >
                   <img
                     src="/images/ECOMSIN.png"
@@ -720,30 +720,33 @@ export default function Home() {
                 </a>
               </div>
               <div className="mb-8 flex justify-center">
-                <div className="relative inline-block bg-gradient-to-r from-blue-600 to-indigo-400 bg-clip-text text-sm font-bold uppercase leading-6 text-transparent">
-                  LAUNCH YOUR DREAM
+                <div className="relative inline-block bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-clip-text text-sm font-bold uppercase leading-6 text-transparent">
+                أطلق حلمك
+
                 </div>
               </div>
-              <div className="relative z-[20] text-center">
-                <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
-                  E-commerce Mastery of the future. Available today.
+              <div className="relative text-center">
+                <h2 className="py-3 text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-clip-text text-sm font-bold uppercase leading-6 text-transparent">
+                إتقان التجارة الإلكترونية للمستقبل. متوفر اليوم.
+
                 </h2>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Discover the Blueprint for E-commerce Triumph. See Success
-                  Unfold Before You.
+                اكتشف الخطة لتحقيق نجاح التجارة الإلكترونية. شاهد النجاح يتكشف أمامك.
+
+
                 </p>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2">
                   <a
-                    href=""
-                    className="z-20 inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-500 bg-white font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-blue-50 hover:text-blue-600 active:bg-blue-100 h-11 px-8 rounded-full"
+                    href="#"
+                    className="button-33"
                   >
-                    Get a Place
+                    كن شريكًا
                   </a>
                   <a
-                    href=""
-                    className="z-20 inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-600 bg-gray-950 font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-gray-900 hover:text-blue-600 active:bg-blue-950 active:text-blue-500 h-11 px-8 rounded-full"
+                    href="#"
+                    className="button-34"
                   >
-                    Become a Partner
+                    احجز استشارة
                   </a>
                 </div>
               </div>
@@ -849,12 +852,6 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <p className="max-w-md text-sm text-gray-400">
-          In a market capped at +€717 billion you can't even savor a slice of
-          $1,000 a day ? We're the first paid program with a guaranteed profit
-          through a legal contract. Plus, we handle everything from products to
-          shipping and money transfers - it's all taken care of for you!
-        </p>
         <p className="cairo max-w-md text-sm text-gray-400">
           في سوق تبلغ قيمته 717+ مليار يورو، ألا يمكنك حتى التمتع بشريحة من 1000
           دولار في اليوم؟ نحن أول برنامج مدفوع بربح مضمون من خلال عقد قانوني.
@@ -922,55 +919,7 @@ export default function Home() {
                     We need your phone number to contact you.
                   </p>
                 </div>
-                <div className="space-y-2 flex w-full flex-col items-start justify-start gap-2">
-                  <label
-                    htmlFor=""
-                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  >
-                    Where did you hear about us?
-                  </label>
-                  <div
-                    className="gap-2 flex flex-col space-y-1"
-                    role="radiogroup"
-                  >
-                    <div className="flex items-center space-x-3 space-y-0">
-                      <label className="flex cursor-pointer items-center gap-3 text-sm leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 font-normal text-gray-400">
-                        <input
-                          className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                          type="radio"
-                          value="option1"
-                          checked={selectedOption === "option1"}
-                          onChange={handleOptionChange}
-                        />
-                        Instagram
-                      </label>
-                    </div>
-                    <div className="flex items-center space-x-3 space-y-0">
-                      <label className="flex cursor-pointer items-center gap-3 text-sm leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 font-normal text-gray-400">
-                        <input
-                          className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                          type="radio"
-                          value="option2"
-                          checked={selectedOption === "option2"}
-                          onChange={handleOptionChange}
-                        />
-                        Old Client Recommendation
-                      </label>
-                    </div>
-                    <div className="flex items-center space-x-3 space-y-0">
-                      <label className="flex cursor-pointer items-center gap-3 text-sm leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 font-normal text-gray-400">
-                        <input
-                          className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                          type="radio"
-                          value="option3"
-                          checked={selectedOption === "option3"}
-                          onChange={handleOptionChange}
-                        />
-                        Somewhere Else
-                      </label>
-                    </div>
-                  </div>
-                </div>
+              
                 <div className="space-y-2 flex w-full flex-col items-start justify-start gap-2">
                   <label
                     htmlFor=""
@@ -1057,12 +1006,12 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="flex w-full flex-row items-center justify-end gap-2">
-                  <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-600 bg-gray-950 font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-gray-900 hover:text-blue-600 active:bg-blue-950 active:text-blue-500 h-10 px-4 py-2 rounded-full">
-                    Reset
+                <div className="flex w-full flex-row items-center justify-center gap-2">
+                  <button className="button-33">
+                  إعادة تعيين
                   </button>
-                  <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-500 bg-white font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-blue-50 hover:text-blue-600 active:bg-blue-100 h-10 px-4 py-2 rounded-full">
-                    Send your Request
+                  <button className="button-34">
+                  أرسل طلبك
                   </button>
                 </div>
               </form>
