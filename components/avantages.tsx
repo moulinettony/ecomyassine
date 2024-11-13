@@ -20,66 +20,70 @@ export default function AvantagesTab() {
               </div>
         <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-4 sm:px-6 md:px-8 xl:grid-cols-2">
           <div className="relative flex h-auto w-full items-center justify-center gap-8">
+            
+           <div className="text-right">
+              <p className="mt-6 text-base leading-8 text-gray-400 text-[24px]">
+                <b className="text-white">A dedicated 21-year-old entrepreneur from Morocco</b> who started
+                his journey alone, without any handouts. Driven by his passion
+                for e-commerce, he's dedicated himself to sharing his knowledge
+              </p>
+            </div>
             <img
               className=""
               src="https://go.mindeo.com/hosted/images/64/4d4bbc946e4c72a6797cb893a0aeb5/wired-gradient-489-rocket-space.gif"
               alt=""
               width="125"
             />
-           <div className="text-start">
+          </div>
+          <div className="relative flex h-auto w-full items-center justify-center gap-8">
+        
+           <div className="text-right">
               <p className="mt-6 text-base leading-8 text-gray-400 text-[24px]">
                 <b className="text-white">A dedicated 21-year-old entrepreneur from Morocco</b> who started
                 his journey alone, without any handouts. Driven by his passion
                 for e-commerce, he's dedicated himself to sharing his knowledge
               </p>
             </div>
-          </div>
-          <div className="relative flex h-auto w-full items-center justify-center gap-8">
             <img
               className=""
               src="https://go.mindeo.com/hosted/images/8f/e0d85c29e643e491dcc4753c3f0e12/wired-gradient-458-goal-target.gif"
               alt=""
               width="125"
             />
-           <div className="text-start">
+          </div>
+
+          <div className="relative flex h-auto w-full items-center justify-center gap-8">
+            
+           <div className="text-right">
               <p className="mt-6 text-base leading-8 text-gray-400 text-[24px]">
                 <b className="text-white">A dedicated 21-year-old entrepreneur from Morocco</b> who started
                 his journey alone, without any handouts. Driven by his passion
                 for e-commerce, he's dedicated himself to sharing his knowledge
               </p>
             </div>
-          </div>
-
-          <div className="relative flex h-auto w-full items-center justify-center gap-8">
             <img
               className=""
               src="https://go.mindeo.com/hosted/images/f7/27d59d26874d81ae7f38977a85c453/wired-gradient-976-web-analytics.gif"
               alt=""
               width="125"
             />
-           <div className="text-start">
+          </div>
+
+          <div className="relative flex h-auto w-full items-center justify-center gap-8">
+            
+           <div className="text-right">
               <p className="mt-6 text-base leading-8 text-gray-400 text-[24px]">
                 <b className="text-white">A dedicated 21-year-old entrepreneur from Morocco</b> who started
                 his journey alone, without any handouts. Driven by his passion
                 for e-commerce, he's dedicated himself to sharing his knowledge
               </p>
             </div>
-          </div>
-
-          <div className="relative flex h-auto w-full items-center justify-center gap-8">
             <img
               className=""
               src="https://go.mindeo.com/hosted/images/92/c19bfee5954419927923f14b622527/wired-gradient-456-handshake-deal.gif"
               alt=""
               width="125"
             />
-           <div className="text-start">
-              <p className="mt-6 text-base leading-8 text-gray-400 text-[24px]">
-                <b className="text-white">A dedicated 21-year-old entrepreneur from Morocco</b> who started
-                his journey alone, without any handouts. Driven by his passion
-                for e-commerce, he's dedicated himself to sharing his knowledge
-              </p>
-            </div>
           </div>
         </div>
         <img
@@ -90,14 +94,8 @@ export default function AvantagesTab() {
               
             />
           <div className="relative flex  w-full  justify-center mb-24 px-4 sm:px-6">
-            <img
-              className="mr-8 h-[125px]"
-              src="https://go.mindeo.com/hosted/images/8f/e0d85c29e643e491dcc4753c3f0e12/wired-gradient-458-goal-target.gif"
-              alt=""
-              width="125"
-              height="125"
-            />
-           <div className="text-start">
+            
+           <div className="text-right">
               <p className="text-base leading-8 text-gray-400 text-[24px]">
                 <b className="text-white">RECEVEZ 4 BONUS EXCEPTIONNELS</b><br/>
                     1. Le top 10 des niches les plus rentables en E-commerce<br/>
@@ -106,6 +104,13 @@ export default function AvantagesTab() {
                     ​La check-list du site E-commerce parfait
               </p>
             </div>
+            <img
+              className="mr-8 h-[125px]"
+              src="https://go.mindeo.com/hosted/images/4f/80ea4898134aa5bea88bc19f4531f3/wired-gradient-412-gift.gif"
+              alt=""
+              width="125"
+              height="125"
+            />
           </div>
         </div>
     );
