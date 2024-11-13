@@ -9,22 +9,12 @@ import dynamic from "next/dynamic";
 import { red } from "@mui/material/colors";
 import PricingTab, { PricingTable } from "@/components/pricing-table";
 import AvantagesTab from "@/components/avantages";
+import Link from "next/link";
+import Form from "@/components/forms/forms";
 export default function Home() {
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
-  const [selectedOption, setSelectedOption] = useState<string>("");
-  const [selectedOption2, setSelectedOption2] = useState<string>("");
-  const [selectedOption3, setSelectedOption3] = useState<string>("");
-
-  const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSelectedOption(event.target.value);
-  };
-  const handleOptionChange2 = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSelectedOption2(event.target.value);
-  };
-  const handleOptionChange3 = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSelectedOption3(event.target.value);
-  };
+ 
 
   const toggleAccordion = () => {
     setIsAccordionOpen(!isAccordionOpen);
@@ -56,6 +46,9 @@ export default function Home() {
         <meta property="og:title" content="E-commerce" />
         <meta property="og:description" content="E-commerce survey" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet"/>
       </Head>
       <Particles
         className="absolute inset-0 z-[-5] animate-fade-in"
@@ -93,15 +86,21 @@ export default function Home() {
                   وتحقيق نجاح ملموس في التجارة الإلكترونية. اكتشف كيف تزيد
                   أرباحك من خلال استراتيجيات دفع مبتكرة في أوروبا.
                 </p>
-                <div className="relative mt-10 flex flex-row items-center justify-center gap-2">
-                  <a href="#" className="button-33">
+                <div className="relative mt-10 flex flex-row items-center justify-center gap-2 mb-[-40px]">
+                <Link
+                    href="#contact"
+                    className="button-33"
+                    scroll={true}
+                  >
                     كن شريكًا
-                  </a>
-                  <a href="#" className="button-34">
-                    احجز استشارة
-                  </a>
+                  </Link>
+                  <Link href="#pricing" className="button-34" scroll={true}>
+                    
+                      احجز استشارة
+                    
+                 </Link>
                 </div>
-                <div className="relative mt-20 flex flex-col items-center justify-center gap-5">
+                {/*<div className="relative mt-20 flex flex-col items-center justify-center gap-5">
                   <div className="flex w-full flex-row items-center justify-center">
                     <div className="group  relative -mr-4">
                       <span className="flex shrink-0 overflow-hidden border-gray-950 relative !m-0 size-12 rounded-full border-2 !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105">
@@ -185,20 +184,13 @@ export default function Home() {
                     يسعدنا أن نرحب بك في مجتمع رواد الأعمال المغربي الذين يحدثون
                     ثورة في نماذج أعمال الدفع عند الاستلام في أوروبا.
                   </p>
-                </div>
+                </div>*/}
               </div>
             </div>
             <div
-              className="absolute inset-x-0 top-[calc(100%-13rem)] -transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+              className="absolute top-[calc(100%-13rem)] -transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
               aria-hidden="true"
             >
-              <div
-                className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-blue-600 to-indigo-500 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-                style={{
-                  clipPath:
-                    "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-                }}
-              ></div>
             </div>
             <div
               className="absolute inset-x-0 -top-40 -transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -367,12 +359,19 @@ export default function Home() {
                   مجال الدفع عند الاستلام في أوروبا.
                 </p>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2">
-                  <a href="#" className="button-33">
+                <Link
+                    href="#contact"
+                    className="button-33"
+                    scroll={true}
+                  >
                     كن شريكًا
-                  </a>
-                  <a href="#" className="button-34">
-                    احجز استشارة
-                  </a>
+                  </Link>
+                  <Link href="#pricing" className="button-34" scroll={true}>
+                    
+                      احجز استشارة
+                    
+                 </Link>
+                  
                 </div>
               </div>
               <div className="flex flex-col place-content-center place-items-center items-center justify-center gap-4 pt-10 sm:pb-10 md:grid md:grid-cols-2 lg:grid-cols-2">
@@ -432,9 +431,9 @@ export default function Home() {
               alt=""
             />
           </div>
-          <div className="flex  flex-col items-start justify-center">
+          <div className="flex flex-col items-start justify-center">
             <div className="text-center mx-auto">
-              <p className="mt-6 textpresentation tracking-normal">
+              <p className="mt-6 textpresentation tracking-normal noto-sans-arabic-whome">
                 <b>
                   لأعمال عبر الإنترنت. بدأت رحلتي في المدرسة الثانوية، حيث كنت
                   أبحث عن شيء مختلف عن المسار التقليدي. ومن هنا بدأت أدرك
@@ -565,11 +564,12 @@ export default function Home() {
             </div>
             <div className="text-center">
               <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
-                Got Questions? We've Got <br />
-                Answers.
+              هل لديك أسئلة؟ لدينا الإجابات.
+              <br />
+              هل لديك أسئلة؟ 
               </h2>
               <p className="mt-6 text-base leading-8 text-gray-400">
-                FAQs for the EcomVestors Master Program.
+              هل لديك أسئلة؟ لدينا الإجابات
               </p>
             </div>
           </div>
@@ -586,16 +586,13 @@ export default function Home() {
                 }
               >
                 <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
-                  What will I learn in the EcomSin Master Program?
+                هل لا تزال لديك المزيد من الأسئلة
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className="text-base text-gray-400">
-                  Join us for our dual-track learning program: EcomVestors
-                  Business Mastery and COD Revolution. Learn all the tricks of
-                  hidden advertising methods, solid advertising structures, new
-                  banking methods, and the secrets of logistics to ship your
-                  products for cheap.
+                <Typography className="text-base text-gray-400 text-right">
+                هل لديك أسئلة؟ لدينا الإجابات
+
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -611,18 +608,14 @@ export default function Home() {
                 }
               >
                 <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
-                  How does the program work?
+                هل لديك أسئلة؟ لدينا الإجابات
+
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className="text-base text-gray-400">
-                  Upon joining, you'll gain access to the Ev program in a Slack
-                  channel. Here, you'll have your two daily coaches and your
-                  dedicated team to assist you from scratch in setting up
-                  everything. You'll also have access to instructional videos on
-                  Loom, guiding you step by step. The program and coaches will
-                  support you every step of the way, with dedicated guidance for
-                  three months until you see results.
+                <Typography className="text-base text-gray-400 text-right">
+                يمكنك الوصول إلى الدعم والتدريب عبر قناتك الخاصة على Slack، حيث يمكنك طرح الأسئلة في جلسات الأسئلة والأجوبة، ومشاهدة مقاطع الفيديو التعليمية على Loom، وإجراء مكالمات مع مدربيك.
+
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -638,14 +631,14 @@ export default function Home() {
                 }
               >
                 <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
-                  Where can I find help?
+                هل لديك أسئلة؟ لدينا الإجابات
+
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className="text-base text-gray-400">
-                  Access support and coaching in your own Slack channel, where
-                  you can ask questions in QA sessions, watch instructional
-                  videos on Loom, and have calls with your coaches.
+                <Typography className="text-base text-gray-400 text-right">
+                يمكنك الوصول إلى الدعم والتدريب عبر قناتك الخاصة على Slack، حيث يمكنك طرح الأسئلة في جلسات الأسئلة والأجوبة، ومشاهدة مقاطع الفيديو التعليمية على Loom، وإجراء مكالمات مع مدربيك.
+
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -661,16 +654,14 @@ export default function Home() {
                 }
               >
                 <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
-                  What's expected of me?
+                هل لديك أسئلة؟ لدينا الإجابات
+
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className="text-base text-gray-400">
-                  Your commitment to learning and applying the strategies taught
-                  in the course. We provide the blueprint and tools for success;
-                  your task is to follow through with dedication. Remember, it's
-                  your business, but we're here to guide you every step of the
-                  way.
+                <Typography className="text-base text-gray-400 text-right">
+                يمكنك الوصول إلى الدعم والتدريب عبر قناتك الخاصة على Slack، حيث يمكنك طرح الأسئلة في جلسات الأسئلة والأجوبة، ومشاهدة مقاطع الفيديو التعليمية على Loom، وإجراء مكالمات مع مدربيك.
+
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -686,20 +677,21 @@ export default function Home() {
                 }
               >
                 <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
-                  Still have more questions?
+                هل لديك أسئلة؟ لدينا الإجابات
+
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className="text-base text-gray-400">
-                  Fill out the program form, and our dedicated agents will be
-                  happy to provide answers.
+                <Typography className="text-base text-gray-400 text-right">
+                يمكنك الوصول إلى الدعم والتدريب عبر قناتك الخاصة على Slack، حيث يمكنك طرح الأسئلة في جلسات الأسئلة والأجوبة، ومشاهدة مقاطع الفيديو التعليمية على Loom، وإجراء مكالمات مع مدربيك.
+
                 </Typography>
               </AccordionDetails>
             </Accordion>
           </div>
         </div>
       </section>
-      <section className="w-6/7 lg:ml-20 lg:mr-20 text-center">
+      <section id="pricing" className="w-6/7 lg:ml-20 lg:mr-20 text-center">
         <PricingTable />
       </section>
       <section className="mb-20 flex w-full flex-col items-center justify-between">
@@ -736,18 +728,19 @@ export default function Home() {
 
                 </p>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2">
-                  <a
-                    href="#"
+                  <Link
+                    href="#contact"
                     className="button-33"
+                    scroll={true}
                   >
                     كن شريكًا
-                  </a>
-                  <a
-                    href="#"
-                    className="button-34"
-                  >
-                    احجز استشارة
-                  </a>
+                  </Link>
+                  <Link href="#pricing" className="button-34" scroll={true}>
+                    
+                      احجز استشارة
+                    
+                 </Link>
+                  
                 </div>
               </div>
             </div>
@@ -859,7 +852,7 @@ export default function Home() {
           كل شيء يتم العناية به من أجلك.
         </p>
       </section>
-      <section className="w-full pt-24 sm:pt-28">
+      <section id = "contact" className="w-full pt-24 sm:pt-28">
         {/*<div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-2">
           <div className="max-w-md">
             <div className="mb-8 flex justify-start">
@@ -1018,7 +1011,6 @@ export default function Home() {
             </div>
           </div>
         </div>*/}
-
         <div className="relative flex h-auto bg-slate-900 rounded-xl w-full flex-col items-start max-lg:px-6 p-10 justify-start max-w-[620px] mx-auto">
           <div className="mx-auto pb-8">
             <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
@@ -1026,192 +1018,7 @@ export default function Home() {
             </h2>
           </div>
           <div className="w-full text-white">
-            <form className="w-full space-y-6" action="">
-              <div className="space-y-2 flex w-full flex-col items-start justify-start gap-2">
-                <label
-                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  htmlFor=""
-                >
-                  Full Name
-                </label>
-                <div className="flex w-full flex-1 flex-row items-stretch justify-start gap-2">
-                  <input
-                    placeholder="Yassine Fallahi"
-                    name="fullname"
-                    type="text"
-                    className="flex h-10 rounded-lg border border-gray-800 bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full"
-                  />
-                </div>
-              </div>
-              <div className="space-y-2 flex w-full flex-col items-start justify-start gap-2">
-                <label
-                  htmlFor=""
-                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                >
-                  What is your age range? *
-                </label>
-                <div
-                  className="w-full grid lg:grid-cols-2 grid-cols-1 gap-2 lg:gap-8 gap-x-12"
-                  role="radiogroup"
-                >
-                  <div className="flex items-center space-x-3 space-y-0">
-                    <label className="w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
-                      <input
-                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        type="radio"
-                        value="option1"
-                        checked={selectedOption === "option1"}
-                        onChange={handleOptionChange}
-                      />
-                      18-24
-                    </label>
-                  </div>
-                  <div className="flex items-center space-x-3 space-y-0">
-                    <label className="w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
-                      <input
-                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        type="radio"
-                        value="option2"
-                        checked={selectedOption === "option2"}
-                        onChange={handleOptionChange}
-                      />
-                      25-34
-                    </label>
-                  </div>
-                  <div className="flex items-center space-x-3 space-y-0">
-                    <label className="w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
-                      <input
-                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        type="radio"
-                        value="option3"
-                        checked={selectedOption === "option3"}
-                        onChange={handleOptionChange}
-                      />
-                      35-44
-                    </label>
-                  </div>
-                  <div className="flex items-center space-x-3 space-y-0">
-                    <label className="w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
-                      <input
-                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        type="radio"
-                        value="option4"
-                        checked={selectedOption === "option4"}
-                        onChange={handleOptionChange}
-                      />
-                      45+
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-2 flex w-full flex-col items-start justify-start gap-2">
-                <label
-                  htmlFor=""
-                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                >
-                  Select only one option: *
-                </label>
-                <div
-                  className="w-full grid lg:grid-cols-3 grid-cols-1 gap-2 lg:gap-4 gap-x-12"
-                  role="radiogroup"
-                >
-                  <div className="flex items-center space-x-3 space-y-0">
-                    <label className="text-sm w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
-                      <input
-                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        type="radio"
-                        value="option1"
-                        checked={selectedOption2 === "option1"}
-                        onChange={handleOptionChange2}
-                      />
-                      Male
-                    </label>
-                  </div>
-                  <div className="flex items-center space-x-3 space-y-0">
-                    <label className="text-sm w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
-                      <input
-                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        type="radio"
-                        value="option2"
-                        checked={selectedOption2 === "option2"}
-                        onChange={handleOptionChange2}
-                      />
-                      Female
-                    </label>
-                  </div>
-                  <div className="flex items-center space-x-3 space-y-0">
-                    <label className="text-sm w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
-                      <input
-                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        type="radio"
-                        value="option3"
-                        checked={selectedOption2 === "option3"}
-                        onChange={handleOptionChange2}
-                      />
-                      Rather not say
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-2 flex w-full flex-col items-start justify-start gap-2">
-                <label
-                  htmlFor=""
-                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                >
-                  What is the highest degree or level of school you have
-                  completed? *
-                </label>
-                <div
-                  className="gap-2 w-full flex flex-col space-y-1"
-                  role="radiogroup"
-                >
-                  <div className="flex items-center space-x-3 space-y-0">
-                    <label className="w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
-                      <input
-                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        type="radio"
-                        value="option1"
-                        checked={selectedOption3 === "option1"}
-                        onChange={handleOptionChange3}
-                      />
-                      High school
-                    </label>
-                  </div>
-                  <div className="flex items-center space-x-3 space-y-0">
-                    <label className="w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
-                      <input
-                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        type="radio"
-                        value="option2"
-                        checked={selectedOption3 === "option2"}
-                        onChange={handleOptionChange3}
-                      />
-                      Associate degree (e.g. AA, AS)
-                    </label>
-                  </div>
-                  <div className="flex items-center space-x-3 space-y-0">
-                    <label className="w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
-                      <input
-                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        type="radio"
-                        value="option3"
-                        checked={selectedOption3 === "option3"}
-                        onChange={handleOptionChange3}
-                      />
-                      Doctorate (e.g. PhD, EdD)
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div className="flex w-full flex-row items-center justify-end gap-2">
-                <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-600 bg-gray-950 font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-gray-900 hover:text-blue-600 active:bg-blue-950 active:text-blue-500 h-10 px-4 py-2 rounded-full">
-                  Reset
-                </button>
-                <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-500 bg-white font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-blue-50 hover:text-blue-600 active:bg-blue-100 h-10 px-4 py-2 rounded-full">
-                  Send your Request
-                </button>
-              </div>
-            </form>
+            <Form/>
           </div>
         </div>
 

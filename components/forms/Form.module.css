@@ -1,0 +1,51 @@
+.container {
+    width: 100%;
+    max-width: 50em;
+    margin: 0 auto;
+  }
+  
+  .formGroup {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .formInput {
+    position: absolute;
+    height: 2.5em;
+    width: 100%;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 0.5em;
+    outline: none;
+    color: #fff;
+    padding-left: 1em;
+    font-size: 1rem;
+  }
+  
+  .formInput:hover {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .formInput:focus {
+    border: 2px solid rgb(15 23 42);
+  }
+  
+  .formLabel {
+    position: absolute;
+    left: 1em;
+    top: 0.75em;
+    color: #fff;
+    font-family: sans-serif;
+    background: transparent;
+    cursor: text;
+    transition: top 350ms ease-in, font-size 350ms ease-in;
+    pointer-events: none;
+  }
+  
+  .formInput:focus + .formLabel,
+  .formInput:not(:placeholder-shown) + .formLabel {
+    top: -0.6em;
+    font-size: 0.75rem;
+    padding: 0 0.3em;
+  }
+  

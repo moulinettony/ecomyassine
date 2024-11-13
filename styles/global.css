@@ -274,9 +274,12 @@ td{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-left: 15px;
+ 
   width: 190px;
   height: 50px;
+  @media only screen and (min-width: 600px) {
+    margin-left: 15px;
+  }
 }
 
 .button-34:hover {
@@ -357,3 +360,11 @@ input[type="checkbox"] {
   letter-spacing: 4px
 }
 
+.noto-sans-arabic-whome {
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}

@@ -12,8 +12,9 @@ interface PricingTabProps {
   }
   planDescription: string
   features: string[]
+  
 }
-
+    
 function PricingTab(props: PricingTabProps) {
   return (
     <div className={`h-full container ${props.popular ? 'dark' : 'dark'}`}>
@@ -28,7 +29,9 @@ function PricingTab(props: PricingTabProps) {
           <div className="inline-flex items-baseline mb-2">
             <span className="text-slate-200 font-bold text-3xl">$</span>
             <span className="text-slate-200 font-bold text-4xl">{props.yearly ? props.price.yearly : props.price.monthly}</span>
-            <span className="crossed-out text-red-500 relative text-xl font-semibold">/60$<span className='h-[1px] absolute rotate-[145deg] w-[80%] bg-white left-2 top-[50%]'></span><span className='h-[1px] absolute rotate-[35deg] w-[80%] bg-white left-2 top-[50%]'></span></span>
+            {props.planName === "Coaching" && <span className="crossed-out text-red-500 relative text-xl font-semibold"> /60$ <span className='h-[1px] absolute rotate-[145deg] w-[80%] bg-white left-2 top-[50%]'></span><span className='h-[1px] absolute rotate-[35deg] w-[80%] bg-white left-2 top-[50%]'></span></span>}
+            {props.planName === "partnership" && <span className="crossed-out text-red-500 relative text-xl font-semibold"> /60$ <span className='h-[1px] absolute rotate-[145deg] w-[80%] bg-white left-2 top-[50%]'></span><span className='h-[1px] absolute rotate-[35deg] w-[80%] bg-white left-2 top-[50%]'></span></span>}
+            {props.planName === "Consulting" && <span className="crossed-out text-red-500 relative text-2xl font-semibold">&nbsp;80$ <span className='h-[1px] absolute rotate-[45deg] w-[60%] bg-white left-2 top-[50%]'></span></span>}
           </div>
           <div className="text-sm text-slate-500 mb-5">{props.planDescription}</div>
           <a className="relative z-[20] w-full inline-flex justify-center whitespace-nowrap rounded-lg bg-indigo-500 px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-indigo-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150" href="#0">
@@ -70,14 +73,14 @@ export function PricingTable() {
             onClick={() => setYearly(true)}
             aria-pressed={yearly}
           >
-            Yearly <span className={`${yearly ? 'text-indigo-200' : 'text-slate-400 dark:text-slate-500'}`}>-20%</span>
+            استشارات
           </button>
           <button
             className={`relative flex-1 text-sm font-medium h-8 rounded-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 ease-in-out ${yearly ? 'text-slate-500 dark:text-slate-400' : 'text-white'}`}
             onClick={() => setYearly(false)}
             aria-pressed={yearly}
           >
-            Monthly
+            التدريب  
           </button>
         </div>
       </div>
