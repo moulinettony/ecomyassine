@@ -16,7 +16,7 @@ export default function AvantagesTab() {
                   </span>
                   .
                 </h2>
-                <div className="h-[2px] w-44 bg-gradient-to-r from-blue-600 to-indigo-400 mx-auto mb-[8rem]"></div>
+                <div className="h-[2px] w-44 bg-gradient-to-r from-blue-600 to-indigo-400 mx-auto mb-[3rem]"></div>
               </div>
         <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-4 sm:px-6 md:px-8 xl:grid-cols-2">
           <div className="relative flex h-auto w-full items-center justify-center gap-8">

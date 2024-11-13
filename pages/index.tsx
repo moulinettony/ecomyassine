@@ -70,7 +70,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="mb-8 flex justify-center">
-                <div className="relative inline-block bg-gradient-to-r from-blue-900 to-white bg-clip-text text-sm font-bold uppercase leading-1 text-transparent mt-[-10px]">
+                <div className="relative inline-block bg-gradient-to-r from-blue-900 to-white bg-clip-text text-xl font-bold uppercase leading-8 text-transparent mt-[-10px]">
                   برنامج الفلاح
                 </div>
               </div>

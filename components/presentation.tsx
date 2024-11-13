@@ -6,7 +6,7 @@ export default function Presentation() {
    
     return (
         <div className="mx-auto max-w-7xl gap-x-8 gap-y-20 px-4 sm:px-6 md:px-8 xl:grid-cols-1 bg-slate-900 rounded-[40px] text-center p-[18px]">
-          <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl my-4 pt-10">
+          <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl my-4 pt-[-10px]">
             تعرف على عاصم الكيحل
             <br />
             <span className="broken leading-[1.6] font-bold sm:text-[2.75rem]"></span>
