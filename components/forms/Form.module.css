@@ -14,7 +14,7 @@
     height: 2.5em;
     width: 100%;
     background: transparent;
-    border: 2px solid #fff;
+    border: 2px solid transparent;
     border-radius: 0.5em;
     outline: none;
     color: #fff;
@@ -32,7 +32,7 @@
   
   .formLabel {
     position: absolute;
-    left: 1em;
+    right: 1em;
     top: 0.75em;
     color: #fff;
     font-family: sans-serif;
@@ -40,6 +40,7 @@
     cursor: text;
     transition: top 350ms ease-in, font-size 350ms ease-in;
     pointer-events: none;
+    text-align: right;
   }
   
   .formInput:focus + .formLabel,

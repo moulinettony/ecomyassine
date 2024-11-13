@@ -19,7 +19,7 @@ const handleOptionChange3 = (event: React.ChangeEvent<HTMLInputElement>) => {
   setSelectedOption3(event.target.value);
 };
   return (
-    <div className={styles.container}>
+    <div className={styles.container} dir="rtl">
       <div className={styles.formGroup}>
         <input
           type="text"
@@ -41,7 +41,7 @@ const handleOptionChange3 = (event: React.ChangeEvent<HTMLInputElement>) => {
                   />
                 </div>
               </div>
-              <div className="space-y-2 flex w-full flex-col items-start justify-start gap-2 mt-[15px]">
+              <div className="space-y-2 flex w-full flex-col items-start justify-start gap-2 mt-[15px] ">
                 <label
                   htmlFor=""
                   className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
@@ -61,7 +61,7 @@ const handleOptionChange3 = (event: React.ChangeEvent<HTMLInputElement>) => {
                         checked={selectedOption === "option1"}
                         onChange={handleOptionChange}
                       />
-                      18-24
+                      <div className='text-[#9ca3af]'>استشارات</div>
                     </label>
                   </div>
                   <div className="flex items-center space-x-3 space-y-0">
@@ -73,91 +73,18 @@ const handleOptionChange3 = (event: React.ChangeEvent<HTMLInputElement>) => {
                         checked={selectedOption === "option2"}
                         onChange={handleOptionChange}
                       />
-                      25-34
+                      <div className='text-[#9ca3af]'>تدريب</div>
                     </label>
                   </div>
-                  <div className="flex items-center space-x-3 space-y-0">
-                    <label className="w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
-                      <input
-                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        type="radio"
-                        value="option3"
-                        checked={selectedOption === "option3"}
-                        onChange={handleOptionChange}
-                      />
-                      35-44
-                    </label>
-                  </div>
-                  <div className="flex items-center space-x-3 space-y-0">
-                    <label className="w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
-                      <input
-                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        type="radio"
-                        value="option4"
-                        checked={selectedOption === "option4"}
-                        onChange={handleOptionChange}
-                      />
-                      45+
-                    </label>
-                  </div>
+                
                 </div>
               </div>
               <div className="space-y-2 flex w-full flex-col items-start justify-start gap-2">
                 <label
                   htmlFor=""
-                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 mt-[15px]"
+                  className="text-right w-1/3 mt-[15px]"
                 >
-                  Select only one option: *
-                </label>
-                <div
-                  className="w-full grid lg:grid-cols-3 grid-cols-1 gap-2 lg:gap-4 gap-x-12"
-                  role="radiogroup"
-                >
-                  <div className="flex items-center space-x-3 space-y-0">
-                    <label className="text-sm w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
-                      <input
-                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        type="radio"
-                        value="option1"
-                        checked={selectedOption2 === "option1"}
-                        onChange={handleOptionChange2}
-                      />
-                      Male
-                    </label>
-                  </div>
-                  <div className="flex items-center space-x-3 space-y-0">
-                    <label className="text-sm w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
-                      <input
-                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        type="radio"
-                        value="option2"
-                        checked={selectedOption2 === "option2"}
-                        onChange={handleOptionChange2}
-                      />
-                      Female
-                    </label>
-                  </div>
-                  <div className="flex items-center space-x-3 space-y-0">
-                    <label className="text-sm w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
-                      <input
-                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        type="radio"
-                        value="option3"
-                        checked={selectedOption2 === "option3"}
-                        onChange={handleOptionChange2}
-                      />
-                      Rather not say
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-2 flex w-full flex-col items-start justify-start gap-2">
-                <label
-                  htmlFor=""
-                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 mt-[15px]"
-                >
-                  What is the highest degree or level of school you have
-                  completed? *
+                  ما هو نطاق ميزانيتك؟
                 </label>
                 <div
                   className="gap-2 w-full flex flex-col space-y-1"
@@ -172,7 +99,12 @@ const handleOptionChange3 = (event: React.ChangeEvent<HTMLInputElement>) => {
                         checked={selectedOption3 === "option1"}
                         onChange={handleOptionChange3}
                       />
-                      High school
+                   <div className="text-right text-[#9ca3af]">
+                    <span> من </span>{/* Pas d'espace ici */}
+                    <span dir='ltr'>1K$</span>  {/* Pas d'espace ici */}
+                    إلى {/* Pas d'espace ici */}
+                    <span dir="ltr"> 2.5K$</span>
+                  </div>
                     </label>
                   </div>
                   <div className="flex items-center space-x-3 space-y-0">
@@ -184,19 +116,12 @@ const handleOptionChange3 = (event: React.ChangeEvent<HTMLInputElement>) => {
                         checked={selectedOption3 === "option2"}
                         onChange={handleOptionChange3}
                       />
-                      Associate degree (e.g. AA, AS)
-                    </label>
-                  </div>
-                  <div className="flex items-center space-x-3 space-y-0">
-                    <label className="w-full bg-transparent px-4 py-3 border rounded-lg border-gray-800 flex items-center gap-4">
-                      <input
-                        className="bg-transparent aspect-square h-4 w-4 rounded-full border border-gray-600 text-gray-200 ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        type="radio"
-                        value="option3"
-                        checked={selectedOption3 === "option3"}
-                        onChange={handleOptionChange3}
-                      />
-                      Doctorate (e.g. PhD, EdD)
+                      <div className="text-right text-[#9ca3af]">
+                        <span> من </span>{/* Pas d'espace ici */}
+                        <span dir='ltr'>2.5K$</span>  {/* Pas d'espace ici */}
+                        إلى {/* Pas d'espace ici */}
+                        <span dir="ltr"> 5K$</span>
+                      </div>
                     </label>
                   </div>
                 </div>

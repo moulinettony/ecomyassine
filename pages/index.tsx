@@ -1014,7 +1014,7 @@ export default function Home() {
         <div className="relative flex h-auto bg-slate-900 rounded-xl w-full flex-col items-start max-lg:px-6 p-10 justify-start max-w-[620px] mx-auto">
           <div className="mx-auto pb-8">
             <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
-              New Member Registration
+            هل لديك أسئلة؟ لدينا الإجابات
             </h2>
           </div>
           <div className="w-full text-white">
