@@ -28,7 +28,7 @@ const handleOptionChange3 = (event: React.ChangeEvent<HTMLInputElement>) => {
           placeholder=" "
         />
         <label htmlFor="name" className={styles.formLabel}>
-          FullName
+        الاسم الكامل
         </label>
       </div>
       <div className="space-y-2 flex w-full flex-col items-start justify-start gap-2">
@@ -128,7 +128,7 @@ const handleOptionChange3 = (event: React.ChangeEvent<HTMLInputElement>) => {
               </div>
               <div className="flex w-full flex-row mt-[15px] flex justify-center">
                 <button className={styles.button35}>
-                  Send your
+                أرسل معلوماتك
                 </button>
               </div>
     </div>

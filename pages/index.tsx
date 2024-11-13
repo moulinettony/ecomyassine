@@ -11,6 +11,7 @@ import PricingTab, { PricingTable } from "@/components/pricing-table";
 import AvantagesTab from "@/components/avantages";
 import Link from "next/link";
 import Form from "@/components/forms/forms";
+import Presentation from "@/components/presentation";
 export default function Home() {
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -48,7 +49,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet"/>
       </Head>
       <Particles
         className="absolute inset-0 z-[-5] animate-fade-in"
@@ -69,7 +70,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="mb-8 flex justify-center">
-                <div className="relative inline-block bg-gradient-to-r from-green-600 to-red-400 bg-clip-text text-sm font-bold uppercase leading-6 text-transparent">
+                <div className="relative inline-block bg-gradient-to-r from-blue-900 to-white bg-clip-text text-sm font-bold uppercase leading-1 text-transparent mt-[-10px]">
                   برنامج الفلاح
                 </div>
               </div>
@@ -416,42 +417,7 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full py-10 sm:py-24 md:py-32">
-        <div className="mx-auto max-w-7xl gap-x-8 gap-y-20 px-4 sm:px-6 md:px-8 xl:grid-cols-1 bg-slate-900 rounded-[40px] text-center p-15">
-          <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl my-4 pt-10">
-            تعرف على عاصم الكيحل
-            <br />
-            <span className="broken leading-[1.6] font-bold sm:text-[2.75rem]"></span>
-          </h2>
-          <div className="h-[2px] w-44 bg-gradient-to-r from-blue-600 to-indigo-400 mx-auto my-5"></div>
-          <div className="relative flex h-auto w-full flex-col items-center justify-center">
-            <img
-              className="aspect-square rounded-3xl object-cover"
-              src="images/New Project.png"
-              width="350"
-              alt=""
-            />
-          </div>
-          <div className="flex flex-col items-start justify-center">
-            <div className="text-center mx-auto">
-              <p className="mt-6 textpresentation tracking-normal noto-sans-arabic-whome">
-                <b>
-                  لأعمال عبر الإنترنت. بدأت رحلتي في المدرسة الثانوية، حيث كنت
-                  أبحث عن شيء مختلف عن المسار التقليدي. ومن هنا بدأت أدرك
-                  الإمكانيات الهائلة لريادة الأعج EV Master وأسست شركة
-                  Ecomvestors، التي تهدف إلى مساعدة البائعين على العمل بسلاسة في
-                  السوق الأوروبية. يُعد برنامج EV Master ثورة حقيقية، حيث يدمج
-                  أسرار اللوجستيات والأدوات المتقدمة والأساليب الخفية مع مجال
-                  التعليم الإلكتروني المتنامي بسرعة. هذا البرنامج يمنح رواد
-                  الأعمال الشباب الفرصة لخلق تأثير إيجابي هائل في العالم، مع
-                  تحقيق أرباح كبيرة. EV هو المنصة المثالية لرواد الأعمال
-                  الطموحين الذين يريدون التخلص من الأساليب التقليدية الروتينية
-                  ويطمحون لنقل أعمالهم عبر الإنترنت إلى مستوى آخر. انضم إليّ
-                  وإلى أكثر من 240 رائد أعمال
-                </b>
-              </p>
-            </div>
-          </div>
-        </div>
+        <Presentation/>
       </section>
       {/*  
      <section className="mt-10 flex w-full flex-col items-center justify-between md:mt-20">
@@ -694,7 +660,7 @@ export default function Home() {
       <section id="pricing" className="w-6/7 lg:ml-20 lg:mr-20 text-center">
         <PricingTable />
       </section>
-      <section className="mb-20 flex w-full flex-col items-center justify-between">
+      <section className="mb-20 flex w-full flex-col items-center justify-between relative z-20">
         <div className="relative flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate px-4 sm:px-8 lg:px-24">
             <div className="container relative mx-auto my-10 w-full max-w-7xl rounded-3xl border border-gray-800/50 bg-gray-950/50 px-4 py-4 backdrop-blur-lg sm:px-8 sm:py-8 md:px-16 lg:px-24 lg:py-15">
@@ -744,7 +710,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="absolute inset-x-0 top-[calc(100%-13rem)] -transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+            <div className="absolute inset-x-0 top-[calc(100%-13rem)] -transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)] pointer-events-none">
               <div
                 className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-blue-600 to-indigo-500 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
                 style={{

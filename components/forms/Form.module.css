@@ -36,11 +36,12 @@
     top: 0.75em;
     color: #fff;
     font-family: sans-serif;
-    background: transparent;
+    background: rgb(15 23 42);
     cursor: text;
     transition: top 350ms ease-in, font-size 350ms ease-in;
     pointer-events: none;
     text-align: right;
+    color : #9ca3af
   }
   
   .formInput:focus + .formLabel,

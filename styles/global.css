@@ -219,10 +219,19 @@ td{
   width: 40%;
 }
 .textpresentation{
-  color: white;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height:30px;
+  color: rgb(156 163 175);
+  text-align: right;
+  line-height: 2;
+  
+}
+
+.cairo-presentation {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
 }
 
 
