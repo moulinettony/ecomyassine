@@ -201,12 +201,9 @@ const handleOptionChange3 = (event: React.ChangeEvent<HTMLInputElement>) => {
                   </div>
                 </div>
               </div>
-              <div className="flex w-full flex-row items-center justify-end gap-2 mt-[15px]">
-                <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-600 bg-gray-950 font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-gray-900 hover:text-blue-600 active:bg-blue-950 active:text-blue-500 h-10 px-4 py-2 rounded-full">
-                  Reset
-                </button>
-                <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-500 bg-white font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-blue-50 hover:text-blue-600 active:bg-blue-100 h-10 px-4 py-2 rounded-full">
-                  Send your Request
+              <div className="flex w-full flex-row mt-[15px] flex justify-center">
+                <button className={styles.button35}>
+                  Send your
                 </button>
               </div>
     </div>

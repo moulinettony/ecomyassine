@@ -88,7 +88,7 @@ export default function Home() {
                 </p>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2 mb-[-40px]">
                 <Link
-                    href="#contact"
+                    href="#partner"
                     className="button-33"
                     scroll={true}
                   >
@@ -360,7 +360,7 @@ export default function Home() {
                 </p>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2">
                 <Link
-                    href="#contact"
+                    href="#partner"
                     className="button-33"
                     scroll={true}
                   >
@@ -573,7 +573,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div>
+          <div dir="rtl">
             <Accordion
               className="z-20 border-b border-gray-800"
               expanded={expanded === "panel1"}
@@ -729,7 +729,7 @@ export default function Home() {
                 </p>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2">
                   <Link
-                    href="#contact"
+                    href="#partner"
                     className="button-33"
                     scroll={true}
                   >
@@ -753,7 +753,7 @@ export default function Home() {
                 }}
               ></div>
             </div>
-            <div className="absolute inset-x-0 -top-40 -transform-gpu overflow-hidden blur-3xl sm:-top-80">
+            <div className="absolute inset-x-0 -top-40 -transform-gpu overflow-hidden blur-3xl sm:-top-80 z-[-5])">
               <div
                 className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-600 to-indigo-500 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
                 style={{
