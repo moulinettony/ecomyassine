@@ -32,7 +32,7 @@ function PricingTab(props: PricingTabProps) {
             <span className="text-slate-200 font-bold text-4xl">{props.yearly ? props.price.yearly : props.price.monthly}</span>
             {props.planName === "Coaching" && <span className="crossed-out text-red-500 relative text-xl font-semibold"> /60$ <span className='h-[1px] absolute rotate-[145deg] w-[80%] bg-white left-2 top-[50%]'></span><span className='h-[1px] absolute rotate-[35deg] w-[80%] bg-white left-2 top-[50%]'></span></span>}
             {props.planName === "partnership" && <span className="crossed-out text-red-500 relative text-xl font-semibold"> /60$ <span className='h-[1px] absolute rotate-[145deg] w-[80%] bg-white left-2 top-[50%]'></span><span className='h-[1px] absolute rotate-[35deg] w-[80%] bg-white left-2 top-[50%]'></span></span>}
-            {props.planName === "Consulting" && <span className="crossed-out text-red-500 relative text-2xl font-semibold">&nbsp;80$ <span className='h-[1px] absolute rotate-[0deg] w-[60%] bg-white left-2 top-[40%]'></span></span>}
+            {props.planName === "Consulting" && <span className="crossed-out text-red-500 relative text-2xl font-semibold">&nbsp;80$ <span className='h-[1px] absolute rotate-[145deg] w-[80%] bg-white left-2 top-[50%]'></span><span className='h-[1px] absolute rotate-[35deg] w-[80%] bg-white left-2 top-[50%]'></span></span>}
           </div>
           <div className="text-sm text-slate-500 mb-5">{props.planDescription}</div>
           <Link href="#contact" scroll={true} className="relative z-[20] w-full inline-flex justify-center whitespace-nowrap rounded-lg bg-indigo-500 px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-indigo-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150">
@@ -124,7 +124,6 @@ export function PricingTable() {
           planDescription="There are many variations available, but the majority have suffered."
           features={[
             ' المنتجات إلى الشحن وتحويل الأموال - كل شيء يتم',
-            ' المنتجات إلى الشحن وتحويل الأموال - كل شيء يتم  المنتجات إلى الشحن وتحويل الأموال - كل شيء يتم',
             'Excepteur sint occaecat cupidatat',
             'Officia deserunt mollit anim',
             'Predefined chunks as necessary',

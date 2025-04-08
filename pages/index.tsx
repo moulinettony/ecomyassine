@@ -15,7 +15,6 @@ import Presentation from "@/components/presentation";
 export default function Home() {
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
- 
 
   const toggleAccordion = () => {
     setIsAccordionOpen(!isAccordionOpen);
@@ -47,16 +46,19 @@ export default function Home() {
         <meta property="og:title" content="E-commerce" />
         <meta property="og:description" content="E-commerce survey" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Sans+Arabic:wght@100..900&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <Particles
         className="absolute inset-0 z-[-5] animate-fade-in"
         quantity={100}
       />
       <section className="flex w-full flex-col items-center justify-between">
-        <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
+        <div className="relative z-[25] flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate">
             <div className="container relative mx-auto my-4 w-full max-w-7xl rounded-3xl px-4 sm:my-10 sm:px-6  md:px-8 ">
               <div className="mb-8 flex justify-center">
@@ -75,12 +77,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="text-center">
-                <h1 className="text-4xl font-bold tracking-tight text-gray-50 sm:text-6xl">
+                <h1 className="text-4xl font-bold tracking-tight text-gray-50 w-[80%] mx-auto">
                   بوابتك الرائدة لثورة الدفع عند الاستلام وتحقيق النجاح في
                   التجارة الإلكترونية بأوروبا
                 </h1>
                 <div className="rounded mt-12">
-                  <Video />
+                  <Video videoId="jgb3pqs49i" />
                 </div>
                 <p className="mt-6 text-lg leading-8 text-gray-400">
                   انطلق مع برنامج EV Master لتعلّم أسرار الدفع عند الاستلام
@@ -88,18 +90,12 @@ export default function Home() {
                   أرباحك من خلال استراتيجيات دفع مبتكرة في أوروبا.
                 </p>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2 mb-[-40px]">
-                <Link
-                    href="#partner"
-                    className="button-33"
-                    scroll={true}
-                  >
+                  <Link href="#partner" className="button-33" scroll={true}>
                     كن شريكًا
                   </Link>
                   <Link href="#pricing" className="button-34" scroll={true}>
-                    
-                      احجز استشارة
-                    
-                 </Link>
+                    احجز استشارة
+                  </Link>
                 </div>
                 {/*<div className="relative mt-20 flex flex-col items-center justify-center gap-5">
                   <div className="flex w-full flex-row items-center justify-center">
@@ -191,8 +187,7 @@ export default function Home() {
             <div
               className="absolute top-[calc(100%-13rem)] -transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
               aria-hidden="true"
-            >
-            </div>
+            ></div>
             <div
               className="absolute inset-x-0 -top-40 -transform-gpu overflow-hidden blur-3xl sm:-top-80"
               aria-hidden="true"
@@ -212,9 +207,9 @@ export default function Home() {
         <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate">
             <div className="container relative mx-auto mt-10 w-full max-w-7xl rounded-3xl px-4 sm:mb-10 sm:px-6 md:px-8">
-            <div className="mb-8 flex justify-center">
+              <div className="mb-8 flex justify-center">
                 <div className="relative inline-block bg-gradient-to-r from-pink-600 to-red-400 bg-clip-text text-lg font-bold uppercase leading-6 text-transparent md:text-2xl">
-                برنامج مأسسة الفلاح
+                  برنامج مأسسة الفلاح
                 </div>
               </div>
               <div className="text-center">
@@ -329,6 +324,38 @@ export default function Home() {
         <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
           <div className="relative isolate">
             <div className="container relative mx-auto my-4 w-full max-w-7xl rounded-3xl px-4 sm:my-10 sm:px-6 md:px-8">
+              <div className="mb-2 flex justify-center">
+                <div className="relative inline-block text-center text-white text-lg font-bold uppercase md:text-2xl">
+                  بعض القصص الملهمة من طلابنا{" "}
+                  <span className="bg-clip-text bg-gradient-to-r from-pink-600 to-red-400 text-transparent">
+                    بفضل البرنامج
+                  </span>
+                </div>
+              </div>
+              <div className="flex flex-col place-content-center place-items-center items-center justify-center pt-10 sm:pb-10">
+                <div className="flex h-full md:grid md:grid-cols-2 lg:grid-cols-2 gap-4 flex-col text-right justify-start overflow-hidden rounded-[22px] border border-gray-800/50 bg-gray-950/50 p-4 lg:p-7 shadow-2xl shadow-blue-500/10 backdrop-blur-md">
+                  <div className="my-1 w-full items-center">
+                    <Video videoId="jgb3pqs49i" />
+                  </div>
+                  <div className="flex flex-col justify-center lg:ml-8">
+                    <h3 className="mb-2 text-xl font-bold text-white">
+                      جيسون - مقاول
+                    </h3>
+                    <p className="text-gray-400">
+                      باع حسابه على ميرش باي أمازون بشكل قانوني مقابل 250 ألف
+                      دولار
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="mt-5 flex w-full flex-col items-center justify-between md:mt-20">
+        <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
+          <div className="relative isolate">
+            <div className="container relative mx-auto my-4 w-full max-w-7xl rounded-3xl px-4 sm:my-10 sm:px-6 md:px-8">
               <div className="mb-8 flex justify-center">
                 <a
                   href="#"
@@ -360,19 +387,12 @@ export default function Home() {
                   مجال الدفع عند الاستلام في أوروبا.
                 </p>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2">
-                <Link
-                    href="#partner"
-                    className="button-33"
-                    scroll={true}
-                  >
+                  <Link href="#partner" className="button-33" scroll={true}>
                     كن شريكًا
                   </Link>
                   <Link href="#pricing" className="button-34" scroll={true}>
-                    
-                      احجز استشارة
-                    
-                 </Link>
-                  
+                    احجز استشارة
+                  </Link>
                 </div>
               </div>
               <div className="flex flex-col place-content-center place-items-center items-center justify-center gap-4 pt-10 sm:pb-10 md:grid md:grid-cols-2 lg:grid-cols-2">
@@ -417,109 +437,9 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full py-10 sm:py-24 md:py-32">
-        <Presentation/>
+        <Presentation />
       </section>
-      {/*  
-     <section className="mt-10 flex w-full flex-col items-center justify-between md:mt-20">
-        <div className="z-[5] flex h-auto w-full flex-col items-center justify-center">
-          <div className="relative isolate">
-            <div className="container relative mx-auto my-10 w-full max-w-7xl rounded-3xl px-4 sm:px-6 md:px-8">
-              <div className="mb-8 flex justify-center">
-                <div className="relative inline-block bg-gradient-to-r from-blue-600 to-indigo-400 bg-clip-text text-sm font-bold uppercase leading-6 text-transparent">
-                  Success Showcase
-                </div>
-              </div>
-              <div className="text-center">
-                <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
-                  A Sneak Peek in the Wins
-                </h2>
-                <p className="mt-6 text-base leading-8 text-gray-400">
-                  See the results. Check out screenshots and videos from our
-                  students making real gains in the COD market.
-                </p>
-              </div>
-              <div className="h-auto w-full max-w-[100vw]">
-                <div className="lg-react-element mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full place-items-center text-center justify-center items-center grid-flow-row px-4 sm:px-6 md:px-8">
-                  {videos.map((video: any, index: any) => (
-                    <div
-                      key={index}
-                      className="aspect-square cursor-pointer size-full max-w-full overflow-hidden rounded-3xl border border-gray-800/50 bg-gray-50 shadow-2xl shadow-blue-500/10"
-                      onClick={() => openLightbox(index)}
-                    >
-                      <ReactPlayer
-                        url={video}
-                        width="100%"
-                        height="100%"
-                        controls={false}
-                        playing={false}
-                        light={false}
-                      />
-                    </div>
-                  ))}
-                  {isOpen && (
-                    <div className="h-screen py-20 px-10 fixed top-0 w-screen backdrop-blur-lg bg-[#00000073]">
-                      <button
-                        className="text-5xl opacity-60 rotate-45 absolute top-[15px] right-[25px] text-white"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        +
-                      </button>
-                      <div className="lightbox-content flex gap-[20px] text-white h-full w-content mx-auto">
-                        <button
-                          className="opacity-60"
-                          onClick={() =>
-                            setVideoIndex(
-                              (videoIndex + videos.length - 1) % videos.length
-                            )
-                          }
-                        >
-                          <img src="images/btn-prev.svg" alt="" />
-                        </button>
-                        <ReactPlayer
-                          url={videos[videoIndex]}
-                          width="100%"
-                          height="100%"
-                          controls={true}
-                          playing={true}
-                        />
-                        <button
-                          className="opacity-60"
-                          onClick={() =>
-                            setVideoIndex((videoIndex + 1) % videos.length)
-                          }
-                        >
-                          <img src="images/btn-next.svg" alt="" />
-                        </button>
-                      </div>
-                    </div>
-                  )}
-                </div>
-                <div className="relative my-10 flex flex-row lg:w-1/2 mx-auto flex-wrap items-center justify-center gap-4 px-4 sm:px-6 md:px-8">
-                  <a
-                    href="#"
-                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-500 bg-white font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-blue-50 hover:text-blue-600 active:bg-blue-100 h-11 px-8 rounded-full w-full"
-                  >
-                    <img src="images/load.svg" className="h-6 w-6" alt="" />
-                    <p>Load More</p>
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transform-gpu transition-transform duration-200 hover:scale-105 active:scale-95 border border-blue-600 bg-gray-950 font-bold text-blue-500 shadow-2xl shadow-blue-500/50 hover:bg-gray-900 hover:text-blue-600 active:bg-blue-950 active:text-blue-500 h-11 px-8 rounded-full w-full"
-                  >
-                    <img
-                      src="images/insta.svg"
-                      className="h-6 w-6 max-lg:hidden"
-                      alt=""
-                    />
-                    <p>Discover More Success Stories on Instagram</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      */}
+
       <section className="w-full py-24 sm:py-32">
         <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-1">
           <div className="max-w-2xl mx-auto">
@@ -530,12 +450,12 @@ export default function Home() {
             </div>
             <div className="text-center">
               <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
-              هل لديك أسئلة؟ لدينا الإجابات.
-              <br />
-              هل لديك أسئلة؟ 
+                هل لديك أسئلة؟ لدينا الإجابات.
+                <br />
+                هل لديك أسئلة؟
               </h2>
               <p className="mt-6 text-base leading-8 text-gray-400">
-              هل لديك أسئلة؟ لدينا الإجابات
+                هل لديك أسئلة؟ لدينا الإجابات
               </p>
             </div>
           </div>
@@ -552,13 +472,12 @@ export default function Home() {
                 }
               >
                 <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
-                هل لا تزال لديك المزيد من الأسئلة
+                  هل لا تزال لديك المزيد من الأسئلة
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className="text-base text-gray-400 text-right">
-                هل لديك أسئلة؟ لدينا الإجابات
-
+                  هل لديك أسئلة؟ لدينا الإجابات
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -574,14 +493,14 @@ export default function Home() {
                 }
               >
                 <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
-                هل لديك أسئلة؟ لدينا الإجابات
-
+                  هل لديك أسئلة؟ لدينا الإجابات
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className="text-base text-gray-400 text-right">
-                يمكنك الوصول إلى الدعم والتدريب عبر قناتك الخاصة على Slack، حيث يمكنك طرح الأسئلة في جلسات الأسئلة والأجوبة، ومشاهدة مقاطع الفيديو التعليمية على Loom، وإجراء مكالمات مع مدربيك.
-
+                  يمكنك الوصول إلى الدعم والتدريب عبر قناتك الخاصة على Slack،
+                  حيث يمكنك طرح الأسئلة في جلسات الأسئلة والأجوبة، ومشاهدة مقاطع
+                  الفيديو التعليمية على Loom، وإجراء مكالمات مع مدربيك.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -597,14 +516,14 @@ export default function Home() {
                 }
               >
                 <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
-                هل لديك أسئلة؟ لدينا الإجابات
-
+                  هل لديك أسئلة؟ لدينا الإجابات
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className="text-base text-gray-400 text-right">
-                يمكنك الوصول إلى الدعم والتدريب عبر قناتك الخاصة على Slack، حيث يمكنك طرح الأسئلة في جلسات الأسئلة والأجوبة، ومشاهدة مقاطع الفيديو التعليمية على Loom، وإجراء مكالمات مع مدربيك.
-
+                  يمكنك الوصول إلى الدعم والتدريب عبر قناتك الخاصة على Slack،
+                  حيث يمكنك طرح الأسئلة في جلسات الأسئلة والأجوبة، ومشاهدة مقاطع
+                  الفيديو التعليمية على Loom، وإجراء مكالمات مع مدربيك.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -620,14 +539,14 @@ export default function Home() {
                 }
               >
                 <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
-                هل لديك أسئلة؟ لدينا الإجابات
-
+                  هل لديك أسئلة؟ لدينا الإجابات
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className="text-base text-gray-400 text-right">
-                يمكنك الوصول إلى الدعم والتدريب عبر قناتك الخاصة على Slack، حيث يمكنك طرح الأسئلة في جلسات الأسئلة والأجوبة، ومشاهدة مقاطع الفيديو التعليمية على Loom، وإجراء مكالمات مع مدربيك.
-
+                  يمكنك الوصول إلى الدعم والتدريب عبر قناتك الخاصة على Slack،
+                  حيث يمكنك طرح الأسئلة في جلسات الأسئلة والأجوبة، ومشاهدة مقاطع
+                  الفيديو التعليمية على Loom، وإجراء مكالمات مع مدربيك.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -643,21 +562,21 @@ export default function Home() {
                 }
               >
                 <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
-                هل لديك أسئلة؟ لدينا الإجابات
-
+                  هل لديك أسئلة؟ لدينا الإجابات
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className="text-base text-gray-400 text-right">
-                يمكنك الوصول إلى الدعم والتدريب عبر قناتك الخاصة على Slack، حيث يمكنك طرح الأسئلة في جلسات الأسئلة والأجوبة، ومشاهدة مقاطع الفيديو التعليمية على Loom، وإجراء مكالمات مع مدربيك.
-
+                  يمكنك الوصول إلى الدعم والتدريب عبر قناتك الخاصة على Slack،
+                  حيث يمكنك طرح الأسئلة في جلسات الأسئلة والأجوبة، ومشاهدة مقاطع
+                  الفيديو التعليمية على Loom، وإجراء مكالمات مع مدربيك.
                 </Typography>
               </AccordionDetails>
             </Accordion>
           </div>
         </div>
       </section>
-      <section id="pricing" className="w-6/7 lg:ml-20 lg:mr-20 text-center">
+      <section id="pricing" className="container mx-auto text-center md:px-20">
         <PricingTable />
       </section>
       <section className="mb-20 flex w-full flex-col items-center justify-between relative z-20">
@@ -679,34 +598,24 @@ export default function Home() {
               </div>
               <div className="mb-8 flex justify-center">
                 <div className="relative inline-block bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-clip-text text-sm font-bold uppercase leading-6 text-transparent">
-                أطلق حلمك
-
+                  أطلق حلمك
                 </div>
               </div>
               <div className="relative text-center">
                 <h2 className="py-3 text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-clip-text text-sm font-bold uppercase leading-6 text-transparent">
-                إتقان التجارة الإلكترونية للمستقبل. متوفر اليوم.
-
+                  إتقان التجارة الإلكترونية للمستقبل. متوفر اليوم.
                 </h2>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                اكتشف الخطة لتحقيق نجاح التجارة الإلكترونية. شاهد النجاح يتكشف أمامك.
-
-
+                  اكتشف الخطة لتحقيق نجاح التجارة الإلكترونية. شاهد النجاح يتكشف
+                  أمامك.
                 </p>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2">
-                  <Link
-                    href="#partner"
-                    className="button-33"
-                    scroll={true}
-                  >
+                  <Link href="#partner" className="button-33" scroll={true}>
                     كن شريكًا
                   </Link>
                   <Link href="#pricing" className="button-34" scroll={true}>
-                    
-                      احجز استشارة
-                    
-                 </Link>
-                  
+                    احجز استشارة
+                  </Link>
                 </div>
               </div>
             </div>
@@ -818,7 +727,7 @@ export default function Home() {
           كل شيء يتم العناية به من أجلك.
         </p>
       </section>
-      <section id = "contact" className="w-full pt-24 sm:pt-28">
+      <section id="contact" className="w-full pt-24 sm:pt-28">
         {/*<div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-2">
           <div className="max-w-md">
             <div className="mb-8 flex justify-start">
@@ -980,11 +889,11 @@ export default function Home() {
         <div className="relative flex h-auto bg-slate-900 rounded-xl w-full flex-col items-start max-lg:px-6 p-10 justify-start max-w-[620px] mx-auto">
           <div className="mx-auto pb-8">
             <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
-            هل لديك أسئلة؟ لدينا الإجابات
+              هل لديك أسئلة؟ لدينا الإجابات
             </h2>
           </div>
           <div className="w-full text-white">
-            <Form/>
+            <Form />
           </div>
         </div>
 

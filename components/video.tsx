@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 
-const WistiaVideoJgb3pqs49i = () => {
+interface WistiaVideoProps {
+  videoId: string;
+}
+
+const WistiaVideo: React.FC<WistiaVideoProps> = ({ videoId }) => {
   useEffect(() => {
     const loadScript = (src: string) => {
       const script = document.createElement("script");
@@ -9,9 +13,9 @@ const WistiaVideoJgb3pqs49i = () => {
       document.body.appendChild(script);
     };
 
-    loadScript("https://fast.wistia.com/embed/medias/jgb3pqs49i.jsonp");
+    loadScript(`https://fast.wistia.com/embed/medias/${videoId}.jsonp`);
     loadScript("https://fast.wistia.com/assets/external/E-v1.js");
-  }, []); 
+  }, [videoId]);
 
   return (
     <div
@@ -29,7 +33,7 @@ const WistiaVideoJgb3pqs49i = () => {
         }}
       >
         <div
-          className="wistia_embed wistia_async_jgb3pqs49i seo=true videoFoam=true"
+          className={`wistia_embed wistia_async_${videoId} seo=true videoFoam=true`}
           style={{ height: "100%", position: "relative", width: "100%" }}
         >
           <div
@@ -46,7 +50,7 @@ const WistiaVideoJgb3pqs49i = () => {
             }}
           >
             <img
-              src="https://fast.wistia.com/embed/medias/jgb3pqs49i/swatch"
+              src={`https://fast.wistia.com/embed/medias/${videoId}/swatch`}
               style={{
                 filter: "blur(5px)",
                 height: "100%",
@@ -63,4 +67,4 @@ const WistiaVideoJgb3pqs49i = () => {
   );
 };
 
-export default WistiaVideoJgb3pqs49i;
+export default WistiaVideo;
