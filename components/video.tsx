@@ -19,7 +19,7 @@ const WistiaVideo: React.FC<WistiaVideoProps> = ({ videoId }) => {
 
   return (
     <div
-      className="wistia_responsive_padding"
+      className="wistia_responsive_padding hidden"
       style={{ padding: "56.25% 0 0 0", position: "relative" }}
     >
       <div
