@@ -9,7 +9,7 @@ export default function AvantagesTab() {
           <div className="text-center">
               <div className="h-[2px] w-44 bg-gradient-to-r from-blue-600 to-indigo-400 mx-auto "></div>
                 <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl my-4">
-                  The current COD model is{" "}<br/>
+                  The current e-commerce model is{" "}<br/>
                   
                   <span className="broken leading-[1.6] font-bold sm:text-[2.75rem]">
                     Broken
@@ -98,7 +98,7 @@ export default function AvantagesTab() {
                 <b className="text-white">GET 4 EXCLUSIVE BONUSES</b><br/>
                     1. Top 10 most profitable niches in e-commerce<br/>
                     2. Step-by-step guide to building your first professional store<br/>
-                    3. A curated list of 100 high-potential products to launch in 2024<br/>
+                    3. A curated list of 100 high-potential products to launch in 2025<br/>
                     4. The ultimate e-commerce website checklist
               </p>
             </div>
