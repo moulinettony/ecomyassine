@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <Head>
-        <title>EcomYesIn</title>
+        <title>Yaqin</title>
         <meta name="description" content="E-commerce description" />
         <meta property="og:title" content="E-commerce" />
         <meta property="og:description" content="E-commerce survey" />
@@ -78,13 +78,13 @@ export default function Home() {
               </div>
               <div className="text-center">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-50 w-[80%] mx-auto">
-                Your gateway to the Cash-on-Delivery revolution and e-commerce success in Europe.
+                Your gateway to the e-commerce success in Europe.
                 </h1>
                 <div className="rounded mt-12">
                   <Video videoId="jgb3pqs49i" />
                 </div>
                 <p className="mt-6 text-lg leading-8 text-gray-400">
-               Join the YAQIN Master Program to discover the secrets of Cash-on-Delivery success and achieve real results in e-commerce.
+               Join the YAQIN Master Program to discover the secrets of branding success and achieve real results in e-commerce.
 Learn how to boost your profits using innovative payment strategies across Europe.
                 </p>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2 mb-[-40px]">
@@ -212,7 +212,7 @@ Learn how to boost your profits using innovative payment strategies across Europ
               </div>
               <div className="text-center">
                 <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
-                  The current Cash-on-Delivery model is struggling..{" "}
+                  The current e-commerce model is struggling..{" "}
                   <span className="broken text-3xl font-bold sm:text-[2.75rem]"></span>
                   .
                 </h2>
@@ -230,10 +230,10 @@ Learn how to boost your profits using innovative payment strategies across Europ
                     />
                   </div>
                   <h3 className="mb-2 text-xl font-bold text-white text-left">
-                   The high Cash-on-Delivery fees in Europe
+                   The high e-commerce fees in Europe
                   </h3>
                   <p className="text-gray-400 text-left">
-                    80% of Cash-on-Delivery services rely on reselling without private warehouses, leading to high fees that make profitability difficult.
+                    80% of e-commerce services rely on reselling without private warehouses, leading to high fees that make profitability difficult.
                   </p>
                 </div>
                 <div className="flex h-full flex-col items-start justify-start rounded-3xl border border-gray-800/50 bg-gray-950/50 p-7 text-start shadow-2xl shadow-blue-500/10 backdrop-blur-md">
@@ -245,7 +245,7 @@ Learn how to boost your profits using innovative payment strategies across Europ
                     />
                   </div>
                   <h3 className="mb-2 text-xl font-bold text-white text-left">
-                   The high Cash-on-Delivery fees in Europe
+                   The high e-commerce fees in Europe
                   </h3>
                   <p className="text-gray-400 text-left">
               With the markets in Western Europe becoming increasingly crowded, we’re opening new horizons with the YAQIN Program, targeting the fast-growing opportunities in Eastern Europe.
@@ -276,10 +276,10 @@ Make your business not only profitable, but also enjoyable to run.
                     />
                   </div>
                   <h3 className="mb-2 text-xl font-bold text-white text-left">
-                    The Secrets of Success in Cash-on-Delivery
+                    The Secrets of Success in e-commerce
                   </h3>
                   <p className="text-gray-400 text-left">
-                Discover what’s really happening inside the Cash-on-Delivery business model — and learn how to use it to your advantage for lasting success.
+                Discover what’s really happening inside the e-commerce business model — and learn how to use it to your advantage for lasting success.
                   </p>
                 </div>
               </div>
@@ -314,31 +314,17 @@ Make your business not only profitable, but also enjoyable to run.
       <section className="w-full">
         <AvantagesTab />
       </section>
-      <section className="mt-5 flex w-full flex-col items-center justify-between md:mt-20">
-        <div className="relative z-[5] flex h-auto w-full flex-col items-center justify-center">
+      <section className="mt-5 flex w-full flex-col items-center justify-between md:mt-20 hidden">
+        <div className="relative z-[5] flex  w-full flex-col items-center justify-center">
           <div className="relative isolate">
-            <div className="container relative mx-auto my-4 w-full max-w-7xl rounded-3xl px-4 sm:my-10 sm:px-6 md:px-8">
+            <div className="container relative mx-auto my-0 w-full max-w-7xl rounded-3xl px-4 sm:my-10 sm:px-6 md:px-8">
               <div className="mb-2 flex justify-center">
-                <div className="relative inline-block text-center text-white text-lg font-bold uppercase md:text-2xl">
-                  Some inspiring success stories from our students{" "}
-                  <span className="bg-clip-text bg-gradient-to-r from-pink-600 to-red-400 text-transparent">
-                    Thanks to the YAQIN Program
-                  </span>
-                </div>
-              </div>
               <div className="flex flex-col place-content-center place-items-center items-center justify-center pt-10 sm:pb-10">
                 <div className="flex h-full md:grid md:grid-cols-2 lg:grid-cols-2 gap-4 flex-col text-right justify-start overflow-hidden rounded-[22px] border border-gray-800/50 bg-gray-950/50 p-4 lg:p-7 shadow-2xl shadow-blue-500/10 backdrop-blur-md">
-                  <div className="my-1 w-full items-center">
+                  <div className="my-1 w-full items-center hidden">
                     <Video videoId="jgb3pqs49i" />
                   </div>
-                  <div className="flex flex-col justify-center lg:ml-8">
-                    <h3 className="mb-2 text-xl font-bold text-white">
-                      Jason – Entrepreneur
-                    </h3>
-                    <p className="text-gray-400">
-                      He legally sold his Merch by Amazon account for $250,000.
-                    </p>
-                  </div>
+                 </div>
                 </div>
               </div>
             </div>
@@ -370,12 +356,12 @@ Make your business not only profitable, but also enjoyable to run.
               </div>
               <div className="flex w-full flex-col items-center justify-center text-center">
                 <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
-                  Master the secrets of successful Cash-on-Delivery in Europe.
+                  Master the secrets of successful e-commerce in Europe.
                 </h2>
                 <p className="mt-6 max-w-3xl text-base leading-8 text-gray-600">
-                  Are you ready to master Cash-on-Delivery strategies and gain complete control over your business?
+                  Are you ready to master e-commerce strategies and gain complete control over your business?
 Our program teaches you how to test your ideas, scale smart, and reach profits exceeding $10,000 with ease.
-With all the resources and support we provide, you’ll be fully equipped to build sustainable success in the Cash-on-Delivery market across Europe.
+With all the resources and support we provide, you’ll be fully equipped to build sustainable success in the e-commerce market across Europe.
                 </p>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2">
                   <Link href="#partner" className="button-33" scroll={true}>
@@ -392,7 +378,7 @@ With all the resources and support we provide, you’ll be fully equipped to bui
                     The latest methods and structures
                   </h3>
                   <p className="text-gray-400">
-                  As a member of the YAQIN Program, you’ll gain exclusive access to over 35 video updates covering the latest Cash-on-Delivery methods and structures.
+                  As a member of the YAQIN Program, you’ll gain exclusive access to over 35 video updates covering the latest e-commerce methods and structures.
 Stay ahead with up-to-date insights and learn the essential frameworks you need to successfully build and scale your business.
                   </p>
                   <div className="-mb-14 mt-8 flex w-full items-center justify-center">
@@ -408,7 +394,7 @@ Stay ahead with up-to-date insights and learn the essential frameworks you need 
                     Daily One-on-One Training
                   </h3>
                   <p className="text-left text-gray-400 ">
-                    In the YAQIN Program, we work side by side with our coaches and your dedicated team to help you build your own Cash-on-Delivery business model.
+                    In the YAQIN Program, we work side by side with our coaches and your dedicated team to help you build your own e-commerce business model.
 Through daily communication and one-on-one training sessions on your private Slack channel, we provide the easiest and most practical way to learn — by doing.
                   </p>
                   <div className="-mb-14 mt-8 flex w-full items-center justify-center">

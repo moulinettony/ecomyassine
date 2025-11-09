@@ -34,7 +34,7 @@ export default function Presentation() {
             Through this program, young entrepreneurs can make a real impact while building highly profitable online businesses.
             YAQIN is the ideal platform for ambitious minds who want to break free from old, outdated methods and take their e-commerce journey to the next level.
 
-            Join me and more than 240 entrepreneurs who are shaping the future of Cash-on-Delivery commerce in Europe.
+            Join me and more than 240 entrepreneurs who are shaping the future of e-commerce commerce in Europe.
           </b>
         </p>
       </div>
