@@ -1,4 +1,4 @@
-# Next.js + Tailwind CSS template
+# Next.js + Tailwind CSS teemplate
 
 This project template aims to simplify the setup of Tailwind CSS on your Next.js app.
 

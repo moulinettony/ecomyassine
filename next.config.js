@@ -1,19 +1,16 @@
 module.exports = {
-  publicRuntimeConfig: {
-    site: {
-      name: 'Next.js + Tailwind CSS template',
-      url:
-        process.env.NODE_ENV === 'development'
-          ? 'http://localhost:3000'
-          : 'https://earvinpiamonte-nextjs-tailwindcss-template.vercel.app',
-      title: 'Next.js + Tailwind CSS template',
-      description: 'Next.js + Tailwind CSS template',
-      socialPreview: '/images/preview.png',
-    },
+  async rewrites() {
+    return [
+      {
+        source: '/admin',
+        destination: '/login', // Redirect /admin to /login
+      },
+    ];
   },
   swcMinify: true,
   i18n: {
     locales: ['en-US'],
     defaultLocale: 'en-US',
   },
+  reactStrictMode : false,
 };
