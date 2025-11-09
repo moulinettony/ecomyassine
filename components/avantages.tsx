@@ -20,70 +20,62 @@ export default function AvantagesTab() {
               </div>
         <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-4 sm:px-6 md:px-8 xl:grid-cols-2">
           <div className="relative flex h-auto w-full items-center justify-center gap-8">
-            
-           <div className="text-right">
-              <p className="mt-6 text-base leading-8 text-gray-400 text-[24px]">
-                <b className="text-white">A dedicated 21-year-old entrepreneur from Morocco</b> who started
-                his journey alone, without any handouts. Driven by his passion
-                for e-commerce, he's dedicated himself to sharing his knowledge
-              </p>
-            </div>
             <img
               className=""
               src="https://go.mindeo.com/hosted/images/64/4d4bbc946e4c72a6797cb893a0aeb5/wired-gradient-489-rocket-space.gif"
               alt=""
               width="125"
             />
-          </div>
-          <div className="relative flex h-auto w-full items-center justify-center gap-8">
-        
-           <div className="text-right">
+           <div className="text-left">
               <p className="mt-6 text-base leading-8 text-gray-400 text-[24px]">
-                <b className="text-white">A dedicated 21-year-old entrepreneur from Morocco</b> who started
-                his journey alone, without any handouts. Driven by his passion
-                for e-commerce, he's dedicated himself to sharing his knowledge
+                <b className="text-white">Vision</b> <br></br>A young entrepreneur who believed e-commerce could change lives — starting with his own.
               </p>
             </div>
-            <img
+            
+          </div>
+          <div className="relative flex h-auto w-full items-center justify-center gap-8">
+        <img
               className=""
               src="https://go.mindeo.com/hosted/images/8f/e0d85c29e643e491dcc4753c3f0e12/wired-gradient-458-goal-target.gif"
               alt=""
               width="125"
             />
+           <div className="text-left">
+              <p className="mt-6 text-base leading-8 text-gray-400 text-[24px]">
+                <b className="text-white">Determination</b> <br></br>With no investors or shortcuts, he built his first store from scratch, turning every obstacle into a lesson.
+              </p>
+            </div>
+            
           </div>
 
           <div className="relative flex h-auto w-full items-center justify-center gap-8">
-            
-           <div className="text-right">
-              <p className="mt-6 text-base leading-8 text-gray-400 text-[24px]">
-                <b className="text-white">A dedicated 21-year-old entrepreneur from Morocco</b> who started
-                his journey alone, without any handouts. Driven by his passion
-                for e-commerce, he's dedicated himself to sharing his knowledge
-              </p>
-            </div>
             <img
               className=""
               src="https://go.mindeo.com/hosted/images/f7/27d59d26874d81ae7f38977a85c453/wired-gradient-976-web-analytics.gif"
               alt=""
               width="125"
             />
+          <div className="text-left">
+              <p className="mt-6 text-base leading-8 text-gray-400 text-[24px]">
+                <b className="text-white">Success</b> <br></br>After generating millions in sales, he chose to reveal the exact strategies that made it possible.
+              </p>
+            </div>
+            
           </div>
 
           <div className="relative flex h-auto w-full items-center justify-center gap-8">
-            
-           <div className="text-right">
-              <p className="mt-6 text-base leading-8 text-gray-400 text-[24px]">
-                <b className="text-white">A dedicated 21-year-old entrepreneur from Morocco</b> who started
-                his journey alone, without any handouts. Driven by his passion
-                for e-commerce, he's dedicated himself to sharing his knowledge
-              </p>
-            </div>
             <img
               className=""
               src="https://go.mindeo.com/hosted/images/92/c19bfee5954419927923f14b622527/wired-gradient-456-handshake-deal.gif"
               alt=""
               width="125"
             />
+           <div className="text-left">
+              <p className="mt-6 text-base leading-8 text-gray-400 text-[24px]">
+                <b className="text-white">Impact</b> <br></br>Today, through YAQIN Master, he empowers hundreds of entrepreneurs across Europe — leading a new era of Cash-on-Delivery.
+              </p>
+            </div>
+            
           </div>
         </div>
         <img
@@ -94,16 +86,6 @@ export default function AvantagesTab() {
               
             />
           <div className="relative flex  w-full  justify-center mb-24 px-4 sm:px-6">
-            
-           <div className="text-right">
-              <p className="text-base leading-8 text-gray-400 text-[24px]">
-                <b className="text-white">RECEVEZ 4 BONUS EXCEPTIONNELS</b><br/>
-                    1. Le top 10 des niches les plus rentables en E-commerce<br/>
-                    2. La marche à suivre pour créer votre première boutique professionnelle<br/>
-                    3. Une liste de 100 produits à fort potentiel à lancer en 2024<br/>
-                    ​La check-list du site E-commerce parfait
-              </p>
-            </div>
             <img
               className="mr-8 h-[125px]"
               src="https://go.mindeo.com/hosted/images/4f/80ea4898134aa5bea88bc19f4531f3/wired-gradient-412-gift.gif"
@@ -111,6 +93,16 @@ export default function AvantagesTab() {
               width="125"
               height="125"
             />
+           <div className="text-left">
+              <p className="text-base leading-8 text-gray-400 text-[24px]">
+                <b className="text-white">GET 4 EXCLUSIVE BONUSES</b><br/>
+                    1. Top 10 most profitable niches in e-commerce<br/>
+                    2. Step-by-step guide to building your first professional store<br/>
+                    3. A curated list of 100 high-potential products to launch in 2024<br/>
+                    4. The ultimate e-commerce website checklist
+              </p>
+            </div>
+            
           </div>
         </div>
     );

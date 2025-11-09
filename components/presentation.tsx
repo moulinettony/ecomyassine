@@ -7,7 +7,7 @@ export default function Presentation() {
     return (
         <div className="mx-auto max-w-7xl gap-x-8 gap-y-20 px-4 sm:px-6 md:px-8 xl:grid-cols-1 bg-slate-900 rounded-[40px] text-center p-[18px]">
           <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl my-4 pt-[-10px]">
-            تعرف على عاصم الكيحل
+            Who is Yassine Fallahi?
             <br />
             <span className="broken leading-[1.6] font-bold sm:text-[2.75rem]"></span>
           </h2>
@@ -20,14 +20,25 @@ export default function Presentation() {
               alt=""
             />
           </div>
-          <div className="flex flex-col items-start justify-center">
-            <div className="text-center mx-auto">
-              <p className="mt-6 tracking-normal text-justify rtl:text-right textpresentation cairo-presentation">
-                <b>أنا عاصم الكيحل، وفي سن 21 عامًا، صنعت مسارًا فريدًا ومربحًا في عالم الأعمال عبر الإنترنت. بدأت رحلتي في المدرسة الثانوية، حيث كنت أبحث عن شيء مختلف عن المسار التقليدي. ومن هنا بدأت أدرك الإمكانيات الهائلة لريادة الأعمال عبر الإنترنت. بحلول سن العشرين، كنت قد أنشأت متجرًا عبر الإنترنت يحقق مبيعات تجاوزت 3 ملايين يورو. وبناءً على هذا النجاح، أطلقت برنامج EV Master وأسست شركة Ecomvestors، التي تهدف إلى مساعدة البائعين على العمل بسلاسة في السوق الأوروبية. يُعد برنامج EV Master ثورة حقيقية، حيث يدمج أسرار اللوجستيات والأدوات المتقدمة والأساليب الخفية مع مجال التعليم الإلكتروني المتنامي بسرعة. هذا البرنامج يمنح رواد الأعمال الشباب الفرصة لخلق تأثير إيجابي هائل في العالم، مع تحقيق أرباح كبيرة. EV هو المنصة المثالية لرواد الأعمال الطموحين الذين يريدون التخلص من الأساليب التقليدية الروتينية ويطمحون لنقل أعمالهم عبر الإنترنت إلى مستوى آخر. انضم إليّ وإلى أكثر من 240 رائد أعمال ممن يساهمون في ثورة لنظام الدفع عن الاستلام في اوروبا
-                </b>
-              </p>
-            </div>
-          </div>
+          <div className="flex flex-col items-start justify-start">
+      <div className="text-left w-full">
+        <p className="mt-6 tracking-normal text-justify text-gray-300 cairo-presentation">
+          <b>
+            I am Yassine Fallahi, a 30-year-old entrepreneur who has built a unique and profitable journey in the world of online business.
+            My story began in high school, when I realized that the traditional path wasn’t for me. That’s when I discovered the limitless opportunities of digital entrepreneurship.
+
+            By the age of thirty, I had created an online store that generated over €3 million in sales. Building on that success, I founded YAQIN and launched the Students Master Program, a system designed to help online sellers thrive in the European market.
+
+            The Program is not just another course — it’s a complete revolution. It combines powerful logistics solutions, advanced digital tools, and hidden strategies within the fast-growing world of e-learning.
+
+            Through this program, young entrepreneurs can make a real impact while building highly profitable online businesses.
+            YAQIN is the ideal platform for ambitious minds who want to break free from old, outdated methods and take their e-commerce journey to the next level.
+
+            Join me and more than 240 entrepreneurs who are shaping the future of Cash-on-Delivery commerce in Europe.
+          </b>
+        </p>
+      </div>
+    </div>
         </div>
     );
   }

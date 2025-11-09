@@ -67,21 +67,14 @@ export function PricingTable() {
       <div className="relative z-[20] flex justify-center max-w-[14rem] m-auto mb-8 lg:mb-16">
         <div className="relative flex w-full p-1 bg-slate-900 rounded-full">
           <span className="absolute inset-0 m-1 pointer-events-none" aria-hidden="true">
-            <span className={`absolute inset-0 w-1/2 bg-indigo-500 rounded-full shadow-sm shadow-indigo-950/10 transform transition-transform duration-150 ease-in-out ${yearly ? 'translate-x-0' : 'translate-x-full'}`}></span>
+            <span className={`absolute inset-0  bg-indigo-500 rounded-full shadow-sm shadow-indigo-950/10 transform `}></span>
           </span>
           <button
-            className={`relative flex-1 text-sm font-medium h-8 rounded-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 ease-in-out ${yearly ? 'text-white' : 'text-slate-500 dark:text-slate-400'}`}
+            className={`relative flex-1 text-sm font-medium h-8 rounded-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 text-white`}
             onClick={() => setYearly(true)}
             aria-pressed={yearly}
           >
-            استشارات
-          </button>
-          <button
-            className={`relative flex-1 text-sm font-medium h-8 rounded-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 ease-in-out ${yearly ? 'text-slate-500 dark:text-slate-400' : 'text-white'}`}
-            onClick={() => setYearly(false)}
-            aria-pressed={yearly}
-          >
-            التدريب  
+            Consulting
           </button>
         </div>
       </div>
@@ -95,25 +88,24 @@ export function PricingTable() {
           yearly={yearly}
           planName="Consulting"
           price={{ yearly: 29, monthly: 35 }}
-          planDescription=".
-هل لديك أسئلة؟"
+          planDescription="Got any questions?"
           features={[
-            '. هل لديك أسئلة؟',
-            ' اوتحويل الأموال - كل شيء يتم',
-            'Excepteur sint occaecat cupidatat',
-            'Officia deserunt mollit anim',
+            'Strategy & Market Audit',
+            'E-Commerce Growth System',
+            'Logistics & Fulfillment Mastery',
+            'Scaling & Automation',
           ]} />}
         <PricingTab
           yearly={yearly}
           planName="Coaching"
           price={{ yearly: 49, monthly: 55 }}
-          planDescription="ولار في اليوم؟ نحن أول برنامج مدفوع بربح مضمون من خلال عقد قانوني. بالإضافة إلى ذلك، نتولى كل شيء من المنتجات إلى الشحن وتحويل الأموال - كل شيء يتم العناية به من أجلك."
+          planDescription="Earn consistently every day with the first paid consulting program backed by a legal profit guarantee."
           features={[
-            'Unlimited placeholder texts',
-            'Consectetur adipiscing elit',
-            'Excepteur sint occaecat cupidatat',
-            'Officia deserunt mollit anim',
-            'Predefined chunks as necessary',
+            '1-on-1 consulting sessions every week',
+            'Progress tracking and personalized strategy adjustments',
+            'Private communication channel (Telegram, Slack, or Discord)',
+            'Business performance and mindset coaching',
+
           ]} />
         {yearly==true && 
         <PricingTab
@@ -121,13 +113,12 @@ export function PricingTable() {
           popular={true}
           planName="partnership"
           price={{ yearly: 79, monthly: 85 }}
-          planDescription="There are many variations available, but the majority have suffered."
+          planDescription="From products to shipping and money transfers — everything is taken care of for you"
           features={[
-            ' المنتجات إلى الشحن وتحويل الأموال - كل شيء يتم',
-            'Excepteur sint occaecat cupidatat',
-            'Officia deserunt mollit anim',
-            'Predefined chunks as necessary',
-            'Free from repetition',
+            'Strategic Partnership',
+            'Operational Partnership',
+            'Licensed Partnership',
+            'Investment Partnership',
           ]} />}
         
       </div>

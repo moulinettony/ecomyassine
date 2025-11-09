@@ -73,28 +73,26 @@ export default function Home() {
               </div>
               <div className="mb-8 flex justify-center">
                 <div className="relative inline-block bg-gradient-to-r from-blue-900 to-white bg-clip-text text-xl font-bold uppercase leading-8 text-transparent mt-[-10px]">
-                  برنامج الفلاح
+                  YAQIN PROGRAM
                 </div>
               </div>
               <div className="text-center">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-50 w-[80%] mx-auto">
-                  بوابتك الرائدة لثورة الدفع عند الاستلام وتحقيق النجاح في
-                  التجارة الإلكترونية بأوروبا
+                Your gateway to the Cash-on-Delivery revolution and e-commerce success in Europe.
                 </h1>
                 <div className="rounded mt-12">
                   <Video videoId="jgb3pqs49i" />
                 </div>
                 <p className="mt-6 text-lg leading-8 text-gray-400">
-                  انطلق مع برنامج EV Master لتعلّم أسرار الدفع عند الاستلام
-                  وتحقيق نجاح ملموس في التجارة الإلكترونية. اكتشف كيف تزيد
-                  أرباحك من خلال استراتيجيات دفع مبتكرة في أوروبا.
+               Join the YAQIN Master Program to discover the secrets of Cash-on-Delivery success and achieve real results in e-commerce.
+Learn how to boost your profits using innovative payment strategies across Europe.
                 </p>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2 mb-[-40px]">
                   <Link href="#partner" className="button-33" scroll={true}>
-                    كن شريكًا
+                    Become a Partner
                   </Link>
                   <Link href="#pricing" className="button-34" scroll={true}>
-                    احجز استشارة
+                  Book a Consultation
                   </Link>
                 </div>
                 {/*<div className="relative mt-20 flex flex-col items-center justify-center gap-5">
@@ -209,17 +207,17 @@ export default function Home() {
             <div className="container relative mx-auto mt-10 w-full max-w-7xl rounded-3xl px-4 sm:mb-10 sm:px-6 md:px-8">
               <div className="mb-8 flex justify-center">
                 <div className="relative inline-block bg-gradient-to-r from-pink-600 to-red-400 bg-clip-text text-lg font-bold uppercase leading-6 text-transparent md:text-2xl">
-                  برنامج مأسسة الفلاح
+                    The YAQIN Master Program
                 </div>
               </div>
               <div className="text-center">
                 <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
-                  نموذج الدفع عند الاستلام الحالي متعثر.{" "}
+                  The current Cash-on-Delivery model is struggling..{" "}
                   <span className="broken text-3xl font-bold sm:text-[2.75rem]"></span>
                   .
                 </h2>
                 <p className="mt-6 text-base leading-8 text-gray-600">
-                  قل وداعاً للتكاليف المرتفعة والأسواق المزدحمة
+                  Say goodbye to high costs and overcrowded markets.
                 </p>
               </div>
               <div className="flex flex-col place-content-center place-items-center items-center justify-center gap-4 py-10 md:grid md:grid-cols-2 lg:grid-cols-4">
@@ -231,12 +229,11 @@ export default function Home() {
                       alt=""
                     />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold text-white text-right">
-                    رسوم الدفع عند الاستلام المرتفعة في أوروب
+                  <h3 className="mb-2 text-xl font-bold text-white text-left">
+                   The high Cash-on-Delivery fees in Europe
                   </h3>
-                  <p className="text-gray-400 text-right">
-                    80% من خدمات الدفع عند الاستلام تعتمد على إعادة البيع دون
-                    مستودعات خاصة، مما يؤدي إلى رسوم باهظة تصعّب تحقيق الأرباح.
+                  <p className="text-gray-400 text-left">
+                    80% of Cash-on-Delivery services rely on reselling without private warehouses, leading to high fees that make profitability difficult.
                   </p>
                 </div>
                 <div className="flex h-full flex-col items-start justify-start rounded-3xl border border-gray-800/50 bg-gray-950/50 p-7 text-start shadow-2xl shadow-blue-500/10 backdrop-blur-md">
@@ -247,12 +244,11 @@ export default function Home() {
                       alt=""
                     />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold text-white text-right">
-                    رسوم الدفع عند الاستلام المرتفعة في أوروب
+                  <h3 className="mb-2 text-xl font-bold text-white text-left">
+                   The high Cash-on-Delivery fees in Europe
                   </h3>
-                  <p className="text-gray-400 text-right">
-                    مع ازدحام الأسواق في أوروبا الغربية، نحن نفتح آفاقاً جديدة
-                    مع برنامج EV، مستهدفين الفرص الواعدة في أوروبا الشرقية.
+                  <p className="text-gray-400 text-left">
+              With the markets in Western Europe becoming increasingly crowded, we’re opening new horizons with the YAQIN Program, targeting the fast-growing opportunities in Eastern Europe.
                   </p>
                 </div>
                 <div className="flex h-full flex-col items-start justify-start rounded-3xl border border-gray-800/50 bg-gray-950/50 p-7 text-start shadow-2xl shadow-blue-500/10 backdrop-blur-md">
@@ -263,13 +259,12 @@ export default function Home() {
                       alt=""
                     />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold text-white text-right">
-                    هل مللت من الطرق التقليدية؟
+                  <h3 className="mb-2 text-xl font-bold text-white text-left">
+                    Are you tired of traditional methods?
                   </h3>
-                  <p className="text-gray-400 text-right">
-                    استعد للسيطرة الكاملة مع فريقك الخاص ومركز اتصالك، وحقق
-                    توصيلات بأقل من 4 يورو لكل شحنة، لتجعل العمل مربحاً وممتعاً
-                    في آن واحد.
+                  <p className="text-gray-400 text-left">
+                    Get ready for complete control with your own team and call center — achieving deliveries for less than €4 per shipment.
+Make your business not only profitable, but also enjoyable to run.
                   </p>
                 </div>
                 <div className="flex h-full flex-col items-start justify-start rounded-3xl border border-gray-800/50 bg-gray-950/50 p-7 text-start shadow-2xl shadow-blue-500/10 backdrop-blur-md">
@@ -280,12 +275,11 @@ export default function Home() {
                       alt=""
                     />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold text-white text-right">
-                    أسرار النجاح في الدفع عند الاستلام
+                  <h3 className="mb-2 text-xl font-bold text-white text-left">
+                    The Secrets of Success in Cash-on-Delivery
                   </h3>
-                  <p className="text-gray-400 text-right">
-                    تعرف على ما يجري فعلاً في نموذج أعمال الدفع عند الاستلام
-                    واستخدمه لتحقيق النجاح لصالحك.
+                  <p className="text-gray-400 text-left">
+                Discover what’s really happening inside the Cash-on-Delivery business model — and learn how to use it to your advantage for lasting success.
                   </p>
                 </div>
               </div>
@@ -326,9 +320,9 @@ export default function Home() {
             <div className="container relative mx-auto my-4 w-full max-w-7xl rounded-3xl px-4 sm:my-10 sm:px-6 md:px-8">
               <div className="mb-2 flex justify-center">
                 <div className="relative inline-block text-center text-white text-lg font-bold uppercase md:text-2xl">
-                  بعض القصص الملهمة من طلابنا{" "}
+                  Some inspiring success stories from our students{" "}
                   <span className="bg-clip-text bg-gradient-to-r from-pink-600 to-red-400 text-transparent">
-                    بفضل البرنامج
+                    Thanks to the YAQIN Program
                   </span>
                 </div>
               </div>
@@ -339,11 +333,10 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col justify-center lg:ml-8">
                     <h3 className="mb-2 text-xl font-bold text-white">
-                      جيسون - مقاول
+                      Jason – Entrepreneur
                     </h3>
                     <p className="text-gray-400">
-                      باع حسابه على ميرش باي أمازون بشكل قانوني مقابل 250 ألف
-                      دولار
+                      He legally sold his Merch by Amazon account for $250,000.
                     </p>
                   </div>
                 </div>
@@ -365,45 +358,42 @@ export default function Home() {
                     className="size-16 rounded-xl shadow-2xl shadow-blue-500/10 backdrop-blur-md"
                     width={64}
                     height={64}
-                    src="images/depositphotos_183178310-stock-illustration-letters-logo-initial-logo-identity (1) (1).png"
+                    src="images/yq.png"
                     alt=""
                   />
                 </a>
               </div>
               <div className="mb-8 flex justify-center">
                 <div className="relative inline-block bg-gradient-to-r from-pink-600 to-red-400 bg-clip-text text-lg font-bold uppercase leading-6 text-transparent md:text-2xl">
-                  برنامج مأسسة الفلاح
                 </div>
+                  The YAQIN Master Program
               </div>
               <div className="flex w-full flex-col items-center justify-center text-center">
                 <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
-                  أتقن أسرار الدفع عند الاستلام بنجاح في أوروبا.
+                  Master the secrets of successful Cash-on-Delivery in Europe.
                 </h2>
                 <p className="mt-6 max-w-3xl text-base leading-8 text-gray-600">
-                  هل أنت مستعد لإتقان استراتيجيات الدفع عند الاستلام وتحقيق
-                  السيطرة الكاملة؟ برنامجنا يتيح لك تعلم كيفية اختبار أفكارك،
-                  التوسع بذكاء، والوصول إلى أرباح تتجاوز 10,000 دولار بسهولة. مع
-                  جميع الموارد والدعم الذي نقدمه، ستتمكن من بناء نجاح مستدام في
-                  مجال الدفع عند الاستلام في أوروبا.
+                  Are you ready to master Cash-on-Delivery strategies and gain complete control over your business?
+Our program teaches you how to test your ideas, scale smart, and reach profits exceeding $10,000 with ease.
+With all the resources and support we provide, you’ll be fully equipped to build sustainable success in the Cash-on-Delivery market across Europe.
                 </p>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2">
                   <Link href="#partner" className="button-33" scroll={true}>
-                    كن شريكًا
+                    Become a Partner
                   </Link>
                   <Link href="#pricing" className="button-34" scroll={true}>
-                    احجز استشارة
+                    Book a Consultation
                   </Link>
                 </div>
               </div>
               <div className="flex flex-col place-content-center place-items-center items-center justify-center gap-4 pt-10 sm:pb-10 md:grid md:grid-cols-2 lg:grid-cols-2">
-                <div className="flex h-full flex-col text-right justify-start overflow-hidden rounded-3xl border border-gray-800/50 bg-gray-950/50 p-7  shadow-2xl shadow-blue-500/10 backdrop-blur-md">
+                <div className="flex h-full flex-col text-left justify-start overflow-hidden rounded-3xl border border-gray-800/50 bg-gray-950/50 p-7  shadow-2xl shadow-blue-500/10 backdrop-blur-md">
                   <h3 className="mb-2 text-xl font-bold text-white">
-                    أحدث الطرق والهياكل
+                    The latest methods and structures
                   </h3>
                   <p className="text-gray-400">
-                    كعضو في برنامج EV، ستحصل على وصول حصري إلى أكثر من 35 تحديث
-                    فيديو حول طرق وهياكل الدفع عند الاستلام. كن على اطلاع بأحدث
-                    المعلومات وتعلم الهياكل اللازمة لتأسيس عملك بنجاح.
+                  As a member of the YAQIN Program, you’ll gain exclusive access to over 35 video updates covering the latest Cash-on-Delivery methods and structures.
+Stay ahead with up-to-date insights and learn the essential frameworks you need to successfully build and scale your business.
                   </p>
                   <div className="-mb-14 mt-8 flex w-full items-center justify-center">
                     <img
@@ -413,15 +403,13 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                <div className="flex h-full flex-col text-right justify-start overflow-hidden rounded-3xl border border-gray-800/50 bg-gray-950/50 p-7 shadow-2xl shadow-blue-500/10 backdrop-blur-md">
+                <div className="flex h-full flex-col text-left justify-start overflow-hidden rounded-3xl border border-gray-800/50 bg-gray-950/50 p-7 shadow-2xl shadow-blue-500/10 backdrop-blur-md">
                   <h3 className="mb-2 text-xl font-bold text-white">
-                    تدريب فردي يومي
+                    Daily One-on-One Training
                   </h3>
-                  <p className="text-gray-400">
-                    في برنامج EV، نعمل جنبًا إلى جنب مع المدربين وفريقك لمساعدتك
-                    في تأسيس نموذج عملك للدفع عند الاستلام. من خلال التواصل
-                    اليومي وجلسات التدريب الفردي على قناة Slac الخاصة بك، نقدم
-                    لك أسهل طريقة للتعلم من خلال الممارسة.
+                  <p className="text-left text-gray-400 ">
+                    In the YAQIN Program, we work side by side with our coaches and your dedicated team to help you build your own Cash-on-Delivery business model.
+Through daily communication and one-on-one training sessions on your private Slack channel, we provide the easiest and most practical way to learn — by doing.
                   </p>
                   <div className="-mb-14 mt-8 flex w-full items-center justify-center">
                     <img
@@ -450,16 +438,16 @@ export default function Home() {
             </div>
             <div className="text-center">
               <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
-                هل لديك أسئلة؟ لدينا الإجابات.
+                Got questions? We’ve got the answers
                 <br />
-                هل لديك أسئلة؟
+                Do you have any questions?
               </h2>
               <p className="mt-6 text-base leading-8 text-gray-400">
-                هل لديك أسئلة؟ لدينا الإجابات
+                Got questions? We’ve got the answers.
               </p>
             </div>
           </div>
-          <div dir="rtl">
+          <div>
             <Accordion
               className="z-20 border-b border-gray-800"
               expanded={expanded === "panel1"}
@@ -471,13 +459,13 @@ export default function Home() {
                   <ExpandMoreIcon className="transition-transform fill-white duration-200" />
                 }
               >
-                <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
-                  هل لا تزال لديك المزيد من الأسئلة
+                <Typography className="flex bg-transparent flex-1 items-center py-8 font-medium text-left transition-all">
+                  Still have more questions?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className="text-base text-gray-400 text-right">
-                  هل لديك أسئلة؟ لدينا الإجابات
+                <Typography className="text-base text-gray-400 text-left">
+                  Got questions? We’ve got the answers.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -492,15 +480,14 @@ export default function Home() {
                   <ExpandMoreIcon className="transition-transform fill-white duration-200" />
                 }
               >
-                <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
-                  هل لديك أسئلة؟ لدينا الإجابات
+                <Typography className="flex bg-transparent flex-1 items-center py-8 font-medium text-left transition-all">
+                 Got questions? We’ve got the answers..
+
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className="text-base text-gray-400 text-right">
-                  يمكنك الوصول إلى الدعم والتدريب عبر قناتك الخاصة على Slack،
-                  حيث يمكنك طرح الأسئلة في جلسات الأسئلة والأجوبة، ومشاهدة مقاطع
-                  الفيديو التعليمية على Loom، وإجراء مكالمات مع مدربيك.
+                <Typography className="text-base text-gray-400 text-left">
+                 You’ll have access to support and training through your private Slack channel, where you can ask questions during Q&A sessions, watch educational videos on Loom, and schedule calls with your coaches.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -515,15 +502,13 @@ export default function Home() {
                   <ExpandMoreIcon className="transition-transform fill-white duration-200" />
                 }
               >
-                <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
-                  هل لديك أسئلة؟ لدينا الإجابات
+                <Typography className="flex bg-transparent flex-1 items-center  py-8 font-medium text-left transition-all">
+                  Got questions? We’ve got the answers.
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className="text-base text-gray-400 text-right">
-                  يمكنك الوصول إلى الدعم والتدريب عبر قناتك الخاصة على Slack،
-                  حيث يمكنك طرح الأسئلة في جلسات الأسئلة والأجوبة، ومشاهدة مقاطع
-                  الفيديو التعليمية على Loom، وإجراء مكالمات مع مدربيك.
+                <Typography className="text-base text-gray-400 text-left">
+                  You’ll have access to support and training through your private Slack channel, where you can ask questions during Q&A sessions, watch educational videos on Loom, and schedule calls with your coaches.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -538,15 +523,15 @@ export default function Home() {
                   <ExpandMoreIcon className="transition-transform fill-white duration-200" />
                 }
               >
-                <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
-                  هل لديك أسئلة؟ لدينا الإجابات
+                <Typography className="flex bg-transparent flex-1 items-center py-8 font-medium text-right transition-all">
+                 Get answer?
+
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className="text-base text-gray-400 text-right">
-                  يمكنك الوصول إلى الدعم والتدريب عبر قناتك الخاصة على Slack،
-                  حيث يمكنك طرح الأسئلة في جلسات الأسئلة والأجوبة، ومشاهدة مقاطع
-                  الفيديو التعليمية على Loom، وإجراء مكالمات مع مدربيك.
+                <Typography className="text-base text-gray-400 text-left">
+                  You’ll have access to support and training through your private Slack channel, where you can ask questions during Q&A sessions, watch educational videos on Loom, and schedule calls with your coaches.
+
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -561,15 +546,14 @@ export default function Home() {
                   <ExpandMoreIcon className="transition-transform fill-white duration-200" />
                 }
               >
-                <Typography className="flex bg-transparent flex-1 items-center justify-between py-8 font-medium transition-all">
-                  هل لديك أسئلة؟ لدينا الإجابات
+                <Typography className="flex bg-transparent flex-1 items-center  py-8 font-medium text-left transition-all">
+                Got questions? We’ve got the answers..
+
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className="text-base text-gray-400 text-right">
-                  يمكنك الوصول إلى الدعم والتدريب عبر قناتك الخاصة على Slack،
-                  حيث يمكنك طرح الأسئلة في جلسات الأسئلة والأجوبة، ومشاهدة مقاطع
-                  الفيديو التعليمية على Loom، وإجراء مكالمات مع مدربيك.
+                <Typography className="text-base text-gray-400 text-left">
+                  You’ll have access to dedicated support and training through your private Slack channel, where you can ask questions during Q&A sessions, watch educational videos on Loom, and book calls with your coaches.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -598,23 +582,22 @@ export default function Home() {
               </div>
               <div className="mb-8 flex justify-center">
                 <div className="relative inline-block bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-clip-text text-sm font-bold uppercase leading-6 text-transparent">
-                  أطلق حلمك
+                  Launch Your Dream
                 </div>
               </div>
               <div className="relative text-center">
                 <h2 className="py-3 text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-clip-text text-sm font-bold uppercase leading-6 text-transparent">
-                  إتقان التجارة الإلكترونية للمستقبل. متوفر اليوم.
+                  Master the e-commerce of the future. Available today.
                 </h2>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  اكتشف الخطة لتحقيق نجاح التجارة الإلكترونية. شاهد النجاح يتكشف
-                  أمامك.
+                  Discover the roadmap to e-commerce success — and watch success unfold before your eyes.
                 </p>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2">
                   <Link href="#partner" className="button-33" scroll={true}>
-                    كن شريكًا
+                    Become a Partner
                   </Link>
                   <Link href="#pricing" className="button-34" scroll={true}>
-                    احجز استشارة
+                    Book a Consultation
                   </Link>
                 </div>
               </div>
@@ -721,10 +704,10 @@ export default function Home() {
           </div>
         </div>
         <p className="cairo max-w-md text-sm text-gray-400">
-          في سوق تبلغ قيمته 717+ مليار يورو، ألا يمكنك حتى التمتع بشريحة من 1000
-          دولار في اليوم؟ نحن أول برنامج مدفوع بربح مضمون من خلال عقد قانوني.
-          بالإضافة إلى ذلك، نتولى كل شيء من المنتجات إلى الشحن وتحويل الأموال -
-          كل شيء يتم العناية به من أجلك.
+    In a market worth over €717 billion, can’t you claim even a $1,000-a-day slice of it?
+We’re the first paid program with legally guaranteed profits — protected by a binding contract.
+On top of that, we handle everything for you — from product sourcing and logistics to shipping and money transfers.
+Every detail is taken care of, so you can focus entirely on growth and results.
         </p>
       </section>
       <section id="contact" className="w-full pt-24 sm:pt-28">
@@ -889,7 +872,8 @@ export default function Home() {
         <div className="relative flex h-auto bg-slate-900 rounded-xl w-full flex-col items-start max-lg:px-6 p-10 justify-start max-w-[620px] mx-auto">
           <div className="mx-auto pb-8">
             <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
-              هل لديك أسئلة؟ لدينا الإجابات
+                               Got questions? We’ve got the answers..
+
             </h2>
           </div>
           <div className="w-full text-white">
@@ -906,14 +890,14 @@ export default function Home() {
             className="z-20 flex size-auto items-center justify-start bg-none"
           >
             <img
-              src="images/logo-dark-3x.webp"
+              src="images/ECOMSIN.png"
               height={24}
               width={150}
               alt=""
             />
           </a>
           <div className="w-auto text-sm font-normal leading-snug text-gray-500/75">
-            ©2024 Ecomsin, Inc. All rights reserved.
+            @2025 YAQIN, Inc. All rights reserved.
           </div>
         </div>
       </div>

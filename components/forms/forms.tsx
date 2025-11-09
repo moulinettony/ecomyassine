@@ -17,7 +17,7 @@ export default function Form() {
     setSelectedOption3(event.target.value);
   };
   return (
-    <div className={styles.container} dir="rtl">
+    <div className={styles.container}>
       <div className={styles.formGroup}>
         <input
           type="text"
@@ -26,7 +26,7 @@ export default function Form() {
           placeholder=" "
         />
         <label htmlFor="name" className={styles.formLabel}>
-          الاسم الكامل
+          Full Name
         </label>
       </div>
       <div className="space-y-2 flex w-full flex-col items-start justify-start gap-2">
@@ -44,7 +44,7 @@ export default function Form() {
           htmlFor=""
           className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
         >
-          ما هو نطاق ميزانيتك ؟
+          What is your budget range ?
         </label>
         <div
           className="w-full grid lg:grid-cols-2 grid-cols-1 gap-2 lg:gap-8 gap-x-12"
@@ -59,7 +59,7 @@ export default function Form() {
                 checked={selectedOption === "option1"}
                 onChange={handleOptionChange}
               />
-              <div className="text-[#9ca3af] text-[0.9rem]">استشارات</div>
+              <div className="text-[#9ca3af] text-[0.9rem]">Consulting</div>
             </label>
           </div>
           <div className="flex items-center space-x-3 space-y-0">
@@ -71,14 +71,14 @@ export default function Form() {
                 checked={selectedOption === "option2"}
                 onChange={handleOptionChange}
               />
-              <div className="text-[#9ca3af] text-[0.9rem]">تدريب</div>
+              <div className="text-[#9ca3af] text-[0.9rem]">Coaching</div>
             </label>
           </div>
         </div>
       </div>
       <div className="space-y-2 flex w-full flex-col items-start justify-start gap-2">
-        <label htmlFor="" className="text-right w-1/3 mt-[15px]">
-          ما هو نطاق ميزانيتك؟
+        <label htmlFor="" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+      What is your budget range?
         </label>
         <div className="gap-2 w-full flex flex-col space-y-1" role="radiogroup">
           <div className="flex items-center space-x-3 space-y-0">
@@ -91,10 +91,10 @@ export default function Form() {
                 onChange={handleOptionChange3}
               />
               <div className="text-right text-[#9ca3af] text-[0.9rem]">
-                <span> من </span>
+                <span> From </span>
                 {/* Pas d'espace ici */}
                 <span dir="ltr">1K$</span> {/* Pas d'espace ici */}
-                إلى {/* Pas d'espace ici */}
+                To {/* Pas d'espace ici */}
                 <span dir="ltr"> 2.5K$</span>
               </div>
             </label>
@@ -109,10 +109,10 @@ export default function Form() {
                 onChange={handleOptionChange3}
               />
               <div className="text-right text-[#9ca3af] text-[0.9rem]">
-                <span> من </span>
+                <span> From </span>
                 {/* Pas d'espace ici */}
                 <span dir="ltr">2.5K$</span> {/* Pas d'espace ici */}
-                إلى {/* Pas d'espace ici */}
+                To {/* Pas d'espace ici */}
                 <span dir="ltr"> 5K$</span>
               </div>
             </label>
@@ -120,7 +120,7 @@ export default function Form() {
         </div>
       </div>
       <div className="flex w-full flex-row mt-[15px] flex justify-center">
-        <button className={styles.button35}>أرسل معلوماتك</button>
+        <button className={styles.button35}>Send your information</button>
       </div>
     </div>
   );

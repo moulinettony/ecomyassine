@@ -18,7 +18,7 @@
     border-radius: 0.5em;
     outline: none;
     color: #fff;
-    padding-left: 1em;
+    padding-right: 1em;
     font-size: 1rem;
   }
   
@@ -32,7 +32,7 @@
   
   .formLabel {
     position: absolute;
-    right: 1em;
+    left: 1em;
     top: 0.6em;
     color: #fff;
     font-family: sans-serif;
