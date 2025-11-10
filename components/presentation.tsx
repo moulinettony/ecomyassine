@@ -27,12 +27,12 @@ export default function Presentation() {
             I am Yassine Fallahi, a 30-year-old entrepreneur who has built a unique and profitable journey in the world of online business.
             My story began in high school, when I realized that the traditional path wasn’t for me. That’s when I discovered the limitless opportunities of digital entrepreneurship.
 
-            By the age of thirty, I had created an online store that generated over €3 million in sales. Building on that success, I founded YAQIN and launched the Students Master Program, a system designed to help online sellers thrive in the European market.
+            By the age of thirty, I had created an online store that generated over €3 million in sales. Building on that success, I founded YAQINE and launched the Students Master Program, a system designed to help online sellers thrive in the European market.
 
-            The Program is not just another course — it’s a complete revolution. It combines powerful logistics solutions, advanced digital tools, and hidden strategies within the fast-growing world of e-learning.
+            The Program is not just another course it’s a complete revolution. It combines powerful logistics solutions, advanced digital tools, and hidden strategies within the fast-growing world of e-learning.
 
             Through this program, young entrepreneurs can make a real impact while building highly profitable online businesses.
-            YAQIN is the ideal platform for ambitious minds who want to break free from old, outdated methods and take their e-commerce journey to the next level.
+            YAQINE is the ideal platform for ambitious minds who want to break free from old, outdated methods and take their e-commerce journey to the next level.
 
             Join me and more than 240 entrepreneurs who are shaping the future of e-commerce commerce in Europe.
           </b>

@@ -28,7 +28,7 @@ export default function AvantagesTab() {
             />
            <div className="text-left">
               <p className="mt-6 text-base leading-8 text-gray-400 text-[24px]">
-                <b className="text-white">Vision</b> <br></br>A young entrepreneur who believed e-commerce could change lives — starting with his own.
+                <b className="text-white">Vision</b> <br></br>A young entrepreneur who believed e-commerce could change lives starting with his own.
               </p>
             </div>
             
@@ -72,7 +72,7 @@ export default function AvantagesTab() {
             />
            <div className="text-left">
               <p className="mt-6 text-base leading-8 text-gray-400 text-[24px]">
-                <b className="text-white">Impact</b> <br></br>Today, through YAQIN Master, he empowers hundreds of entrepreneurs across Europe — leading a new era of e-commerce.
+                <b className="text-white">Impact</b> <br></br>Today, through YAQINE Master, he empowers hundreds of entrepreneurs across Europe leading a new era of e-commerce.
               </p>
             </div>
             

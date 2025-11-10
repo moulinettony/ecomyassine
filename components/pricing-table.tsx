@@ -113,7 +113,7 @@ export function PricingTable() {
           popular={true}
           planName="partnership"
           price={{ yearly: 79, monthly: 85 }}
-          planDescription="From products to shipping and money transfers — everything is taken care of for you"
+          planDescription="From products to shipping and money transfers everything is taken care of for you"
           features={[
             'Strategic Partnership',
             'Operational Partnership',

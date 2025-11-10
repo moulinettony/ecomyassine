@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <Head>
-        <title>Yaqin</title>
+        <title>YAQINE</title>
         <meta name="description" content="E-commerce description" />
         <meta property="og:title" content="E-commerce" />
         <meta property="og:description" content="E-commerce survey" />
@@ -73,7 +73,7 @@ export default function Home() {
               </div>
               <div className="mb-8 flex justify-center">
                 <div className="relative inline-block bg-gradient-to-r from-blue-900 to-white bg-clip-text text-xl font-bold uppercase leading-8 text-transparent mt-[-10px]">
-                  YAQIN PROGRAM
+                  YAQINE PROGRAM
                 </div>
               </div>
               <div className="text-center">
@@ -84,8 +84,7 @@ export default function Home() {
                   <Video videoId="jgb3pqs49i" />
                 </div>
                 <p className="mt-6 text-lg leading-8 text-gray-400">
-               Join the YAQIN Master Program to discover the secrets of branding success and achieve real results in e-commerce.
-Learn how to boost your profits using innovative payment strategies across Europe.
+               Yaqine LLC is a U.S.-registered digital marketing and e-commerce consulting company helping international brands build online stores, create product videos, and scale their sales with paid advertising.
                 </p>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2 mb-[-40px]">
                   <Link href="#partner" className="button-33" scroll={true}>
@@ -207,7 +206,7 @@ Learn how to boost your profits using innovative payment strategies across Europ
             <div className="container relative mx-auto mt-10 w-full max-w-7xl rounded-3xl px-4 sm:mb-10 sm:px-6 md:px-8">
               <div className="mb-8 flex justify-center">
                 <div className="relative inline-block bg-gradient-to-r from-pink-600 to-red-400 bg-clip-text text-lg font-bold uppercase leading-6 text-transparent md:text-2xl">
-                    The YAQIN Master Program
+                    The YAQINE Master Program
                 </div>
               </div>
               <div className="text-center">
@@ -248,7 +247,7 @@ Learn how to boost your profits using innovative payment strategies across Europ
                    The high e-commerce fees in Europe
                   </h3>
                   <p className="text-gray-400 text-left">
-              With the markets in Western Europe becoming increasingly crowded, we’re opening new horizons with the YAQIN Program, targeting the fast-growing opportunities in Eastern Europe.
+              With the markets in Western Europe becoming increasingly crowded, we’re opening new horizons with the YAQINE Program, targeting the fast-growing opportunities in Eastern Europe.
                   </p>
                 </div>
                 <div className="flex h-full flex-col items-start justify-start rounded-3xl border border-gray-800/50 bg-gray-950/50 p-7 text-start shadow-2xl shadow-blue-500/10 backdrop-blur-md">
@@ -263,7 +262,7 @@ Learn how to boost your profits using innovative payment strategies across Europ
                     Are you tired of traditional methods?
                   </h3>
                   <p className="text-gray-400 text-left">
-                    Get ready for complete control with your own team and call center — achieving deliveries for less than €4 per shipment.
+                    Get ready for complete control with your own team and call center achieving deliveries for less than €4 per shipment.
 Make your business not only profitable, but also enjoyable to run.
                   </p>
                 </div>
@@ -279,7 +278,7 @@ Make your business not only profitable, but also enjoyable to run.
                     The Secrets of Success in e-commerce
                   </h3>
                   <p className="text-gray-400 text-left">
-                Discover what’s really happening inside the e-commerce business model — and learn how to use it to your advantage for lasting success.
+                Discover what’s really happening inside the e-commerce business model and learn how to use it to your advantage for lasting success.
                   </p>
                 </div>
               </div>
@@ -352,7 +351,7 @@ Make your business not only profitable, but also enjoyable to run.
               <div className="mb-8 flex justify-center">
                 <div className="relative inline-block bg-gradient-to-r from-pink-600 to-red-400 bg-clip-text text-lg font-bold uppercase leading-6 text-transparent md:text-2xl">
                 </div>
-                  The YAQIN Master Program
+                  The YAQINE Master Program
               </div>
               <div className="flex w-full flex-col items-center justify-center text-center">
                 <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
@@ -378,7 +377,7 @@ With all the resources and support we provide, you’ll be fully equipped to bui
                     The latest methods and structures
                   </h3>
                   <p className="text-gray-400">
-                  As a member of the YAQIN Program, you’ll gain exclusive access to over 35 video updates covering the latest e-commerce methods and structures.
+                  As a member of the YAQINE Program, you’ll gain exclusive access to over 35 video updates covering the latest e-commerce methods and structures.
 Stay ahead with up-to-date insights and learn the essential frameworks you need to successfully build and scale your business.
                   </p>
                   <div className="-mb-14 mt-8 flex w-full items-center justify-center">
@@ -394,8 +393,8 @@ Stay ahead with up-to-date insights and learn the essential frameworks you need 
                     Daily One-on-One Training
                   </h3>
                   <p className="text-left text-gray-400 ">
-                    In the YAQIN Program, we work side by side with our coaches and your dedicated team to help you build your own e-commerce business model.
-Through daily communication and one-on-one training sessions on your private Slack channel, we provide the easiest and most practical way to learn — by doing.
+                    In the YAQINE Program, we work side by side with our coaches and your dedicated team to help you build your own e-commerce business model.
+Through daily communication and one-on-one training sessions on your private Slack channel, we provide the easiest and most practical way to learn by doing.
                   </p>
                   <div className="-mb-14 mt-8 flex w-full items-center justify-center">
                     <img
@@ -533,7 +532,7 @@ Through daily communication and one-on-one training sessions on your private Sla
                 }
               >
                 <Typography className="flex bg-transparent flex-1 items-center  py-8 font-medium text-left transition-all">
-                Got questions? We’ve got the answers..
+                Got questions? We’ve got the answers
 
                 </Typography>
               </AccordionSummary>
@@ -576,7 +575,7 @@ Through daily communication and one-on-one training sessions on your private Sla
                   Master the e-commerce of the future. Available today.
                 </h2>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Discover the roadmap to e-commerce success — and watch success unfold before your eyes.
+                  Discover the roadmap to e-commerce success and watch success unfold before your eyes.
                 </p>
                 <div className="relative mt-10 flex flex-row items-center justify-center gap-2">
                   <Link href="#partner" className="button-33" scroll={true}>
@@ -691,8 +690,8 @@ Through daily communication and one-on-one training sessions on your private Sla
         </div>
         <p className="cairo max-w-md text-sm text-gray-400">
     In a market worth over €717 billion, can’t you claim even a $1,000-a-day slice of it?
-We’re the first paid program with legally guaranteed profits — protected by a binding contract.
-On top of that, we handle everything for you — from product sourcing and logistics to shipping and money transfers.
+We’re the first paid program with legally guaranteed profits protected by a binding contract.
+On top of that, we handle everything for you from product sourcing and logistics to shipping and money transfers.
 Every detail is taken care of, so you can focus entirely on growth and results.
         </p>
       </section>
@@ -855,11 +854,10 @@ Every detail is taken care of, so you can focus entirely on growth and results.
             </div>
           </div>
         </div>*/}
-        <div className="relative flex h-auto bg-slate-900 rounded-xl w-full flex-col items-start max-lg:px-6 p-10 justify-start max-w-[620px] mx-auto">
+        <div className="relative flex h-auto bg-slate-900 rounded-xl w-full flex-col items-start max-lg:px-6 p-8 justify-start max-w-[620px] mx-auto">
           <div className="mx-auto pb-8">
             <h2 className="text-2xl font-bold tracking-tight text-gray-50 sm:text-4xl">
-                               Got questions? We’ve got the answers..
-
+              Contact Form
             </h2>
           </div>
           <div className="w-full text-white">
@@ -883,7 +881,9 @@ Every detail is taken care of, so you can focus entirely on growth and results.
             />
           </a>
           <div className="w-auto text-sm font-normal leading-snug text-gray-500/75">
-            @2025 YAQIN, Inc. All rights reserved.
+            © 2025 Yaqine LLC All rights reserved  
+Registered in Wyoming, USA  
+Email: contact@fallahiyassine.com
           </div>
         </div>
       </div>
